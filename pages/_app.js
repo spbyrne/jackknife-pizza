@@ -1,6 +1,12 @@
 import Head from 'next/head'
 
 const App = ({ Component, pageProps }) => {
+  if (typeof window !== 'undefined' && 'serviceWorker' in navigator) {
+    window.navigator.serviceWorker.getRegistrations().then(registrations => {
+      registrations.forEach(r => r.unregister())
+    })
+  }
+
   return (
     <>
       <Head>
