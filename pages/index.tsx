@@ -72,7 +72,7 @@ function Index(props) {
             <div className="column">
               <div className="heroImageGrid">
                 <div className="gridItem">
-                  <Image
+                  <img
                     src="/images/finish2.jpg"
                     width="800"
                     height="533"
@@ -80,19 +80,14 @@ function Index(props) {
                   />
                 </div>
                 <div className="gridItem">
-                  <Image
-                    src="/images/jim.jpg"
-                    width="800"
-                    height="533"
-                    alt=""
-                  />
+                  <img src="/images/jim.jpg" width="800" height="533" alt="" />
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div className="heroBackground">
-          <Image src="/images/oven1.jpg" alt="" layout="fill" />
+          <img src="/images/oven1.jpg" alt="" layout="fill" />
         </div>
       </div>
       <div className="menu">
@@ -113,15 +108,10 @@ function Index(props) {
             </div>
             <div className="menuImageGrid">
               <div className="gridItem">
-                <Image
-                  src="/images/prep3.jpg"
-                  width="1000"
-                  height="638"
-                  alt=""
-                />
+                <img src="/images/prep3.jpg" width="1000" height="638" alt="" />
               </div>
               <div className="gridItem">
-                <Image
+                <img
                   src="/images/finish1.jpg"
                   width="1000"
                   height="638"
@@ -129,12 +119,7 @@ function Index(props) {
                 />
               </div>
               <div className="gridItem">
-                <Image
-                  src="/images/bagels.jpg"
-                  width="720"
-                  height="720"
-                  alt=""
-                />
+                <img src="/images/bagels.jpg" width="720" height="720" alt="" />
               </div>
             </div>
             <h2>Veggie Pizzas</h2>
@@ -339,6 +324,8 @@ function Index(props) {
           border-radius: 3px;
           box-shadow: var(--box-shadow);
           overflow: hidden;
+          width: 100%;
+          height: auto;
         }
 
         .textBlock {

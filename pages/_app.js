@@ -181,7 +181,7 @@ const App = ({ Component, pageProps }) => {
             --color-grey: #e6e6e6;
 
             --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
-            --box-shadow: 0 1rem 1rem -0.5rem rgba(0, 0, 0, 0.2);
+            --box-shadow: 0 1rem 1rem -0.5rem rgba(0, 0, 0, 0.1);
           }
         `}
       </style>
