@@ -193,12 +193,41 @@ function Index(props) {
           </div>
         </div>
       </div>
+      <div className="footer">
+        <div className="container">
+          <div className="columns">
+            <div className="column secondary">
+              <p>© 2020 Jackknife Pizza </p>
+            </div>
+            <div className="column alignRight">
+              <a
+                href="https://www.facebook.com/jackknifepizza/"
+                title="Facebook - Jackknife Pizza"
+              >
+                <b>Check out our facebook</b> for up to date information.
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="heroBackground">
+          <img src="/images/oven1.jpg" alt="" />
+        </div>
+      </div>
       <style jsx>{`
+        .footer {
+          position: relative;
+          color: var(--color-white);
+          overflow: hidden;
+          padding: 8rem 0 4rem 0;
+          border-top: 8px solid var(--color-red);
+        }
+
         .hero {
           position: relative;
           color: var(--color-white);
           overflow: hidden;
-          padding: 4rem 0 8rem 0;
+          padding: 4rem 0 9rem 0;
+          border-bottom: 8px solid var(--color-red);
 
           :global(p) {
             font-size: 1.25rem;
@@ -221,8 +250,9 @@ function Index(props) {
           background: white;
           color: black;
           padding: 0.75rem 1.5rem;
-          border-radius: 1.5rem;
-          font-size: 1.25rem;
+          border-radius: 2rem;
+          font-size: 1.375rem;
+          margin: 0.75rem 0 2.75rem 0 !important;
 
           :global(b) {
             display: inline-block;
@@ -263,6 +293,12 @@ function Index(props) {
           }
         }
 
+        .alignRight {
+          @media (min-width: 1000px) {
+            text-align: right;
+          }
+        }
+
         .columns-center {
           align-items: center;
         }
@@ -288,6 +324,7 @@ function Index(props) {
             &:nth-child(2) {
               grid-column: 1 / 3;
               grid-row: 2 / 4;
+              z-index: 2;
             }
           }
         }
@@ -378,8 +415,8 @@ function Index(props) {
         }
 
         .menu {
-          margin-top: -4rem;
-          margin-bottom: 2.5rem;
+          margin-top: -5rem;
+          margin-bottom: -5rem;
         }
 
         .paper {
@@ -390,6 +427,7 @@ function Index(props) {
           border-radius: 3px;
           box-shadow: var(--box-shadow);
           margin: 0 -1.25rem;
+          z-index: 20;
 
           @media (min-width: 1000px) {
             margin: 0 -2.25rem;
