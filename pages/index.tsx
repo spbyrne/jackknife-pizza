@@ -87,7 +87,7 @@ function Index(props) {
           </div>
         </div>
         <div className="heroBackground">
-          <img src="/images/oven1.jpg" alt="" layout="fill" />
+          <img src="/images/oven1.jpg" alt="" />
         </div>
       </div>
       <div className="menu">
