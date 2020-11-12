@@ -1,6 +1,7 @@
 import Logo from '../public/images/jackknife-logo.svg'
 import MapIcon from '../public/images/map-pin.svg'
 import PhoneIcon from '../public/images/phone.svg'
+import TimeIcon from '../public/images/time.svg'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -23,6 +24,9 @@ function Index(props) {
                 pizza. We provide a wide range of delicious and interesting
                 topping combinations with a crispy sourdough crust.
               </p>
+              <div className="reopening">
+                Reopening <b>Friday, November 13th</b>
+              </div>
               <a
                 className="info"
                 href="https://www.google.com/maps/place/Saratoga+Speedway+Ltd/@49.8525957,-125.1364392,14.03z/data=!4m5!3m4!1s0x54881c810ddc98f7:0x99868eb4a2eadeb3!8m2!3d49.8536695!4d-125.137549"
@@ -40,6 +44,17 @@ function Index(props) {
                   </span>
                 </div>
               </a>
+              <div className="info">
+                <div className="infoIcon">
+                  <TimeIcon />
+                </div>
+                <div className="infoText">
+                  <span className="phone">
+                    Open <b>4pm – 8pm</b>
+                  </span>
+                  <span className="secondary">Wednesday – Sunday</span>
+                </div>
+              </div>
               <a className="info" href="tel:7784280014">
                 <div className="infoIcon">
                   <PhoneIcon />
@@ -213,6 +228,20 @@ function Index(props) {
             max-width: 50vw;
             height: auto;
             margin-bottom: 0.5rem;
+          }
+        }
+
+        .reopening {
+          display: inline-block;
+          background: white;
+          color: black;
+          padding: 0.75rem 1.5rem;
+          border-radius: 1.5rem;
+          font-size: 1.25rem;
+
+          :global(b) {
+            display: inline-block;
+            color: var(--color-red);
           }
         }
 
