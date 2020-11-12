@@ -4,13 +4,15 @@ import PhoneIcon from '../public/images/phone.svg'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import data from '../data/menu.json'
+
 function Index(props) {
   return (
     <>
       <div className="hero">
         <div className="container">
           <div className={['columns', 'columns-center'].join(' ')}>
-            <div className="column contentMargin">
+            <div className="column contentMargin textBlock">
               <Link href="/">
                 <a className="heroLogo">
                   <Logo />
@@ -78,7 +80,119 @@ function Index(props) {
           <Image src="/images/oven1.JPG" alt="" layout="fill" />
         </div>
       </div>
-      <div></div>
+      <div className="menu">
+        <div className="container">
+          <div className="paper contentMargin">
+            <h2>Meat Pizzas</h2>
+            <div className="menuGrid">
+              {data.meat &&
+                data.meat.map(item => {
+                  return (
+                    <div className="menuItem">
+                      <h3 className="itemName">{item.name}</h3>
+                      <p className="itemDescription">{item.description}</p>
+                      <p className="itemPrice">{item.price}</p>
+                    </div>
+                  )
+                })}
+            </div>
+            <div className="menuImageGrid">
+              <div className="gridItem">
+                <Image
+                  src="/images/prep3.jpg"
+                  width="2000"
+                  height="1275"
+                  alt=""
+                />
+              </div>
+              <div className="gridItem">
+                <Image
+                  src="/images/finish1.jpg"
+                  width="2000"
+                  height="1275"
+                  alt=""
+                />
+              </div>
+              <div className="gridItem">
+                <Image
+                  src="/images/bagels.jpg"
+                  width="1440"
+                  height="1440"
+                  alt=""
+                />
+              </div>
+            </div>
+            <h2>Veggie Pizzas</h2>
+            <div className="menuGrid">
+              {data.veggie &&
+                data.veggie.map(item => {
+                  return (
+                    <div className="menuItem">
+                      <h3 className="itemName">{item.name}</h3>
+                      <p className="itemDescription">{item.description}</p>
+                      <p className="itemPrice">{item.price}</p>
+                    </div>
+                  )
+                })}
+            </div>
+            <h2>Bagel Sandwiches</h2>
+            <div className="menuGrid">
+              {data.sandwiches &&
+                data.sandwiches.map(item => {
+                  return (
+                    <div className="menuItem">
+                      <h3 className="itemName">{item.name}</h3>
+                      <p className="itemDescription">{item.description}</p>
+                      <p className="itemPrice">{item.price}</p>
+                    </div>
+                  )
+                })}
+            </div>
+            <div className="columns">
+              <div className="column contentMargin">
+                <h2>Alterations</h2>
+                <div className="menuList">
+                  {data.alterations &&
+                    data.alterations.map(item => {
+                      return (
+                        <div className="menuItemSmall">
+                          <h3 className="itemName">{item.name}</h3>
+                          <p className="itemPrice">{item.price}</p>
+                        </div>
+                      )
+                    })}
+                </div>
+              </div>
+              <div className="column contentMargin">
+                <h2>Soup of the Day</h2>
+                <div className="menuList">
+                  {data.soup &&
+                    data.soup.map(item => {
+                      return (
+                        <div className="menuItemSmall">
+                          <h3 className="itemName">{item.name}</h3>
+                          <p className="itemPrice">{item.price}</p>
+                        </div>
+                      )
+                    })}
+                </div>
+                <h2>Island Style Bagels</h2>
+                <div className="menuList">
+                  {data.bagels &&
+                    data.bagels.map(item => {
+                      return (
+                        <div className="menuItemSmall">
+                          <h3 className="itemName">{item.name}</h3>
+                          <p className="itemPrice">{item.price}</p>
+                        </div>
+                      )
+                    })}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <style jsx>{`
         .hero {
           position: relative;
@@ -98,6 +212,7 @@ function Index(props) {
             width: 15rem;
             max-width: 50vw;
             height: auto;
+            margin-bottom: 0.5rem;
           }
         }
 
@@ -121,7 +236,7 @@ function Index(props) {
         .container {
           display: block;
           margin: 0 auto;
-          max-width: 1260px;
+          max-width: 1360px;
           padding: 0 2rem;
         }
 
@@ -163,12 +278,48 @@ function Index(props) {
           }
         }
 
-        .contentMargin {
-          max-width: 34rem;
+        .menuImageGrid {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          position: relative;
+          margin: 0 -3rem;
+          padding: 0.5rem 0;
 
+          @media (min-width: 1000px) {
+            margin: 2rem -4.5rem;
+          }
+
+          :global(> .gridItem) {
+            &:nth-child(1) {
+              grid-column: 1 / 3;
+              grid-row: 1 / 3;
+            }
+            &:nth-child(2) {
+              grid-column: 2 / 5;
+              grid-row: 2 / 4;
+            }
+            &:nth-child(3) {
+              grid-column: 4 / 6;
+              grid-row: 1 / 3;
+            }
+          }
+        }
+
+        :global(img) {
+          border-radius: 3px;
+          box-shadow: var(--box-shadow);
+          overflow: hidden;
+        }
+
+        .textBlock {
+          max-width: 34rem;
+        }
+
+        .contentMargin {
           :global(> *) {
             &:not(:last-child) {
-              margin-bottom: 1.5rem;
+              margin-bottom: 1.75rem;
             }
           }
         }
@@ -208,6 +359,96 @@ function Index(props) {
 
         span {
           display: inline-block;
+        }
+
+        .menu {
+          margin-top: -4rem;
+          margin-bottom: 2.5rem;
+        }
+
+        .paper {
+          position: relative;
+          background: var(--color-white);
+          display: block;
+          padding: 1.75rem 1.5rem 2.5rem 1.5rem;
+          border-radius: 3px;
+          box-shadow: var(--box-shadow);
+          margin: 0 -1.25rem;
+
+          @media (min-width: 1000px) {
+            margin: 0 -2.25rem;
+            padding: 3.5rem 3.25rem 4.5rem 3.25rem;
+          }
+        }
+
+        .menuList {
+          display: grid;
+          grid-row-gap: 1rem;
+        }
+
+        .menuGrid {
+          display: grid;
+          grid-gap: 1.5rem 1.5rem;
+          padding-bottom: 1rem;
+
+          @media (min-width: 600px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 2rem 3rem;
+          }
+
+          @media (min-width: 1200px) {
+            grid-template-columns: repeat(3, 1fr);
+          }
+        }
+
+        .menuItem {
+          display: grid;
+          grid-template-areas: 'name price' 'description description';
+          grid-template-columns: 1fr auto;
+          grid-template-rows: auto 1fr;
+          padding-bottom: 1rem;
+          border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+          align-self: stretch;
+        }
+
+        .menuItemSmall {
+          display: grid;
+          grid-template-areas: 'name price' 'description description';
+          grid-template-columns: 1fr auto;
+          grid-template-rows: auto 1fr;
+          align-self: stretch;
+        }
+
+        .itemName {
+          margin: 0;
+          grid-area: name;
+          line-height: 1.2;
+          font-size: 1.2rem;
+          font-weight: 600;
+        }
+
+        .itemName--small {
+          font-size: 1rem;
+          font-weight: 400;
+        }
+
+        .itemDescription {
+          margin: 0;
+          line-height: 1.2;
+          grid-area: description;
+          margin-top: 0.5rem;
+          align-self: flex-start;
+          color: var(--color-dark);
+        }
+
+        .itemPrice {
+          margin: 0;
+          grid-area: price;
+          line-height: 1.2;
+          font-size: 1.2rem;
+          text-align: right;
+          color: var(--color-red);
         }
       `}</style>
     </>

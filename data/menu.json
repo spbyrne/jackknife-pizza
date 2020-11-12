@@ -1,0 +1,144 @@
+{
+  "meat": [
+    {
+      "name": "Pepperoni",
+      "description": "Tomato sauce, mozzarella, aged cheddar, pepperoni,  parmesan",
+      "price": "24"
+    },
+    {
+      "name": "Jackknife Pepperoni",
+      "description": "Garlic oil, mozzarella, aged cheddar, pickled jalapeños, pepperoni, Big D’s honey, parmesan",
+      "price": "25"
+    },
+    {
+      "name": "The Pepperoni Fungi",
+      "description": "Tomato sauce, mozzarella, aged cheddar, thyme, mushrooms, pepperoni, parmesan",
+      "price": "25"
+    },
+    {
+      "name": "Prosciutto",
+      "description": "Garlic oil, mozzarella, aged cheddar, pickled onions, shaved prosciutto, parmesan",
+      "price": "25"
+    },
+    {
+      "name": "Jackknife Hawaiian",
+      "description": "Garlic oil, mozzarella, aged cheddar, pineapple, shaved prosciutto, parmesan",
+      "price": "25"
+    },
+    {
+      "name": "Chili Lime Chicken",
+      "description": "Garlic oil, mozzarella, aged cheddar, chili lime marinated chicken, corn, black beans, red onion, cilantro, parmesan",
+      "price": "27"
+    },
+    {
+      "name": "Sausage",
+      "description": "Tomato sauce, mozzarella, aged cheddar, pickled jalapeños, garlic pork sausage, fennel seeds, parmesan",
+      "price": "27"
+    },
+    {
+      "name": "Potato Bacon",
+      "description": "Garlic oil, mozzarella, aged cheddar, rosemary, sliced potato, bacon bits, caramelized onions, parmesan",
+      "price": "27"
+    },
+    {
+      "name": "Meat Pizza",
+      "description": "Tomato sauce, mozzarella, aged cheddar, shaved ham, pepperoni, bacon bits, parmesan",
+      "price": "29"
+    }
+  ],
+  "veggie": [
+    {
+      "name": "Garlic Bread",
+      "description": "Tomato sauce, mozzarella, aged cheddar, parmesan",
+      "price": "15"
+    },
+    {
+      "name": "The Cheese",
+      "description": "Tomato sauce, mozzarella, aged cheddar, parmesan",
+      "price": "20"
+    },
+    {
+      "name": "Honey Garlic",
+      "description": "Garlic oil, mozzarella, aged cheddar, Big D’s honey parmesan",
+      "price": "20"
+    },
+    {
+      "name": "Gateway to Olives",
+      "description": "Tomato sauce, mozzarella, aged cheddar, pickled jalapeños, pickled onions, kalamata olives, parmesan",
+      "price": "22"
+    },
+    {
+      "name": "Cheeky Onion",
+      "description": "Garlic oil, mozzarella, aged cheddar, caramelized onion, thyme, parmesan",
+      "price": "22"
+    },
+    {
+      "name": "The S.S. Mush Rush",
+      "description": "Garlic oil, mozzarella, aged cheddar, thyme, pickled onions, mushrooms, lemon and truffle crème drizzle",
+      "price": "25"
+    }
+  ],
+  "alterations": [
+    {
+      "name": "Extra meat",
+      "price": "4"
+    },
+    {
+      "name": "Extra Cheese",
+      "price": "3"
+    },
+    {
+      "name": "Extra Veg",
+      "price": "3"
+    },
+    {
+      "name": "Square Pizza (thick crust)",
+      "price": "2"
+    },
+    {
+      "name": "Gluten Friendly Crust",
+      "price": "2"
+    },
+    {
+      "name": "Dairy Free Cheese",
+      "price": "2"
+    }
+  ],
+  "soup": [
+    {
+      "name": "16oz serving",
+      "price": "5"
+    },
+    {
+      "name": "Soup & Toasted Bagel",
+      "price": "7"
+    }
+  ],
+  "bagels": [
+    {
+      "name": "Single",
+      "price": "2.5"
+    },
+    {
+      "name": "6 Pack",
+      "price": "12"
+    }
+  ],
+  "sandwiches": [
+    {
+      "name": "Honey Garlic",
+      "description": "Big D’s honey, aged cheddar, mozzarella, garlic",
+      "price": "7"
+    },
+    {
+      "name": "Ham and Cheese",
+      "description": "Ham, aged cheddar, mozzarella, grainy mustard",
+      "price": "9"
+    },
+    {
+      "name": "Mushroom Melt",
+      "description": "Mushroom, aged cheddar, mozzarella, thyme, pickled red onions, lemon and truffle crème drizzle ",
+      "price": "9"
+    }
+  ]
+}

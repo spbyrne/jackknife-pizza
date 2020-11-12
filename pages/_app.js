@@ -60,6 +60,7 @@ const App = ({ Component, pageProps }) => {
             font-weight: 400;
             line-height: 1.5;
             font-size: 20px;
+            background: var(--color-grey);
           }
 
           *,
@@ -166,14 +167,21 @@ const App = ({ Component, pageProps }) => {
             display: flex;
             flex-direction: column;
           }
+          h2 {
+            font-size: 2rem;
+          }
+          h3 {
+            font-size: 1.75rem;
+          }
           :root {
             --color-black: #000000;
             --color-dark: #232323;
             --color-white: #f7f7f7;
             --color-red: #b53e39;
-            --color-grey: #a8a8a8;
+            --color-grey: #e6e6e6;
 
             --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
+            --box-shadow: 0 1rem 1rem -0.5rem rgba(0, 0, 0, 0.2);
           }
         `}
       </style>
