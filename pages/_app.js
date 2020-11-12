@@ -59,8 +59,12 @@ const App = ({ Component, pageProps }) => {
             font-family: futura-pt, sans-serif;
             font-weight: 400;
             line-height: 1.5;
-            font-size: 20px;
+            font-size: 16px;
             background: var(--color-grey);
+
+            @media (min-width: 800px) {
+              font-size: 20px;
+            }
           }
 
           *,
