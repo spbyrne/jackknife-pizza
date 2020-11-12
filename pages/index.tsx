@@ -308,8 +308,8 @@ function Index(props) {
 
         .heroImageGrid {
           display: grid;
-          grid-template-columns: 3fr 2fr 2fr;
-          grid-template-rows: 1fr 1fr 1fr;
+          grid-template-columns: 3fr 3fr 2fr;
+          grid-template-rows: 3fr 2fr 3fr;
           position: relative;
 
           :global(> .gridItem) {
@@ -423,7 +423,7 @@ function Index(props) {
 
         .paper {
           position: relative;
-          background: var(--color-white);
+          background: url('/images/paper.png'), white;
           display: block;
           padding: 1.75rem 1.5rem 2.5rem 1.5rem;
           border-radius: 3px;

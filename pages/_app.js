@@ -66,7 +66,7 @@ const App = ({ Component, pageProps }) => {
             font-weight: 400;
             line-height: 1.5;
             font-size: 16px;
-            background: var(--color-grey);
+            background: url('/images/paper.png'), var(--color-grey);
             width: 100%;
             display: block;
 
