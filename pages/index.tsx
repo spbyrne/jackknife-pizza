@@ -74,16 +74,16 @@ function Index(props) {
                 <div className="gridItem">
                   <Image
                     src="/images/finish2.jpg"
-                    width="1600"
-                    height="1066"
+                    width="800"
+                    height="533"
                     alt=""
                   />
                 </div>
                 <div className="gridItem">
                   <Image
                     src="/images/jim.jpg"
-                    width="1600"
-                    height="1066"
+                    width="800"
+                    height="533"
                     alt=""
                   />
                 </div>
@@ -115,24 +115,24 @@ function Index(props) {
               <div className="gridItem">
                 <Image
                   src="/images/prep3.jpg"
-                  width="2000"
-                  height="1275"
+                  width="1000"
+                  height="638"
                   alt=""
                 />
               </div>
               <div className="gridItem">
                 <Image
                   src="/images/finish1.jpg"
-                  width="2000"
-                  height="1275"
+                  width="1000"
+                  height="638"
                   alt=""
                 />
               </div>
               <div className="gridItem">
                 <Image
                   src="/images/bagels.jpg"
-                  width="1440"
-                  height="1440"
+                  width="720"
+                  height="720"
                   alt=""
                 />
               </div>
