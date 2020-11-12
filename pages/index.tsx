@@ -417,6 +417,8 @@ function Index(props) {
         .menu {
           margin-top: -5rem;
           margin-bottom: -5rem;
+          display: block;
+          overflow: hidden;
         }
 
         .paper {

@@ -61,6 +61,8 @@ const App = ({ Component, pageProps }) => {
             line-height: 1.5;
             font-size: 16px;
             background: var(--color-grey);
+            width: 100%;
+            display: block;
 
             @media (min-width: 800px) {
               font-size: 20px;
