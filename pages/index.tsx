@@ -24,9 +24,6 @@ function Index(props) {
                 pizza. We provide a wide range of delicious and interesting
                 topping combinations with a crispy sourdough crust.
               </p>
-              <div className="reopening">
-                Reopening <b>Friday, November 13th</b>
-              </div>
               <a
                 className="info"
                 href="https://www.google.com/maps/place/Saratoga+Speedway+Ltd/@49.8525957,-125.1364392,14.03z/data=!4m5!3m4!1s0x54881c810ddc98f7:0x99868eb4a2eadeb3!8m2!3d49.8536695!4d-125.137549"
