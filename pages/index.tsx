@@ -75,130 +75,126 @@ function Index(props) {
                     <h2>Holiday Hours</h2>
                   </div>
                 </div>
-                <div className="info">
-                  <div className="infoIcon"></div>
-                  <div className="infoText">
-                    <table className="hoursTable">
-                      <tr>
-                        <th colSpan="2">Day</th>
-                        <th>Hours</th>
-                      </tr>
-                      <tr>
-                        <td>December 21</td>
-                        <td>Monday</td>
-                        <td>4pm – 8pm</td>
-                      </tr>
-                      <tr>
-                        <td>December 22</td>
-                        <td>Tuesday</td>
-                        <td>4pm – 8pm</td>
-                      </tr>
-                      <tr>
-                        <td>December 23</td>
-                        <td>Wednesday</td>
-                        <td>4pm – 8pm</td>
-                      </tr>
-                      <tr>
-                        <td>December 24</td>
-                        <td>Thursday</td>
-                        <td>
-                          <strong>Closed</strong>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>December 25</td>
-                        <td>Friday</td>
-                        <td>
-                          <strong>Closed</strong>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>December 26</td>
-                        <td>Saturday</td>
-                        <td>4pm – 8pm</td>
-                      </tr>
-                      <tr>
-                        <td>December 27</td>
-                        <td>Sunday</td>
-                        <td>4pm – 8pm</td>
-                      </tr>
-                      <tr>
-                        <td>December 28</td>
-                        <td>Monday</td>
-                        <td>4pm – 8pm</td>
-                      </tr>
-                      <tr>
-                        <td>December 29</td>
-                        <td>Tuesday</td>
-                        <td>4pm – 8pm</td>
-                      </tr>
-                      <tr>
-                        <td>December 30</td>
-                        <td>Wednesday</td>
-                        <td>4pm – 8pm</td>
-                      </tr>
-                      <tr>
-                        <td>December 31</td>
-                        <td>Thursday</td>
-                        <td>4pm – 8pm</td>
-                      </tr>
-                      <tr>
-                        <td>January 1</td>
-                        <td>Friday</td>
-                        <td>
-                          <strong>Closed</strong>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>January 2</td>
-                        <td>Saturday</td>
-                        <td>
-                          <strong>Closed</strong>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>January 3</td>
-                        <td>Sunday</td>
-                        <td>
-                          <strong>Closed</strong>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>January 4</td>
-                        <td>Monday</td>
-                        <td>
-                          <strong>Closed</strong>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>January 5</td>
-                        <td>Tuesday</td>
-                        <td>
-                          <strong>Closed</strong>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>January 6</td>
-                        <td>Wednesday</td>
-                        <td>
-                          <strong>Closed</strong>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>January 7</td>
-                        <td>Thursday</td>
-                        <td>
-                          <strong>Closed</strong>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>January 8</td>
-                        <td>Friday</td>
-                        <td>4pm – 8pm</td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
+                <br />
+                <table className="hoursTable">
+                  <tr>
+                    <th colSpan="2">Day</th>
+                    <th>Hours</th>
+                  </tr>
+                  <tr>
+                    <td>December 21</td>
+                    <td>Monday</td>
+                    <td>4pm – 8pm</td>
+                  </tr>
+                  <tr>
+                    <td>December 22</td>
+                    <td>Tuesday</td>
+                    <td>4pm – 8pm</td>
+                  </tr>
+                  <tr>
+                    <td>December 23</td>
+                    <td>Wednesday</td>
+                    <td>4pm – 8pm</td>
+                  </tr>
+                  <tr>
+                    <td>December 24</td>
+                    <td>Thursday</td>
+                    <td>
+                      <strong>Closed</strong>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>December 25</td>
+                    <td>Friday</td>
+                    <td>
+                      <strong>Closed</strong>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>December 26</td>
+                    <td>Saturday</td>
+                    <td>4pm – 8pm</td>
+                  </tr>
+                  <tr>
+                    <td>December 27</td>
+                    <td>Sunday</td>
+                    <td>4pm – 8pm</td>
+                  </tr>
+                  <tr>
+                    <td>December 28</td>
+                    <td>Monday</td>
+                    <td>4pm – 8pm</td>
+                  </tr>
+                  <tr>
+                    <td>December 29</td>
+                    <td>Tuesday</td>
+                    <td>4pm – 8pm</td>
+                  </tr>
+                  <tr>
+                    <td>December 30</td>
+                    <td>Wednesday</td>
+                    <td>4pm – 8pm</td>
+                  </tr>
+                  <tr>
+                    <td>December 31</td>
+                    <td>Thursday</td>
+                    <td>4pm – 8pm</td>
+                  </tr>
+                  <tr>
+                    <td>January 1</td>
+                    <td>Friday</td>
+                    <td>
+                      <strong>Closed</strong>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>January 2</td>
+                    <td>Saturday</td>
+                    <td>
+                      <strong>Closed</strong>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>January 3</td>
+                    <td>Sunday</td>
+                    <td>
+                      <strong>Closed</strong>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>January 4</td>
+                    <td>Monday</td>
+                    <td>
+                      <strong>Closed</strong>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>January 5</td>
+                    <td>Tuesday</td>
+                    <td>
+                      <strong>Closed</strong>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>January 6</td>
+                    <td>Wednesday</td>
+                    <td>
+                      <strong>Closed</strong>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>January 7</td>
+                    <td>Thursday</td>
+                    <td>
+                      <strong>Closed</strong>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>January 8</td>
+                    <td>Friday</td>
+                    <td>4pm – 8pm</td>
+                  </tr>
+                </table>
               </div>
             </div>
             <div className="column">
