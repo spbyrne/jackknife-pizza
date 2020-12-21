@@ -78,7 +78,7 @@ function Index(props) {
                 <br />
                 <table className="hoursTable">
                   <tr>
-                    <th colSpan="2">Day</th>
+                    <th colSpan={2}>Day</th>
                     <th>Hours</th>
                   </tr>
                   <tr>
