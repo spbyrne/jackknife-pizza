@@ -192,7 +192,12 @@ function Index(props) {
                   <tr>
                     <td>January 8</td>
                     <td>Friday</td>
-                    <td>4pm – 8pm</td>
+                    <td>
+                      4pm – 8pm
+                      <div>
+                        <small>(back to regular hours)</small>
+                      </div>
+                    </td>
                   </tr>
                 </table>
               </div>
@@ -406,29 +411,52 @@ function Index(props) {
         .holidayHours.paper {
           margin: 0;
           margin-bottom: 0px;
-          padding: 2rem;
+          padding: 2rem 1.5rem 0 1.5rem;
           color: black;
+
+          line-height: 1.4;
         }
 
         .hoursTable {
-          width: 100%;
+          width: calc(100% + 3rem);
+          margin-left: -1.5rem;
+          margin-right: -1.5rem;
           text-align: left;
 
           :global(th, td) {
             padding: 2px 10px;
             line-height: 1.4;
+            text-align: left;
           }
 
           :global(th) {
             border-bottom: 2px solid black;
+            &:first-child {
+              padding-left: 1.5rem;
+            }
+
+            &:last-child {
+              padding-right: 1.5rem;
+            }
           }
 
           :global(td) {
             border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            &:first-child {
+              padding-left: 1.5rem;
+            }
+
+            &:last-child {
+              padding-right: 1.5rem;
+            }
           }
 
           :global(tr:nth-child(2n) td) {
             background: rgba(0, 0, 0, 0.03);
+          }
+
+          :global(tr:last-child td) {
+            padding-bottom: 1rem;
           }
         }
 
