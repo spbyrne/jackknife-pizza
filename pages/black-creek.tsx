@@ -95,6 +95,7 @@ function Index(props) {
         <div className="container">
           <div className="paper contentMargin">
             <h2>Meat Pizzas</h2>
+            <p className="subtitle">14″ crispy sourdough crust</p>
             <div className="menuGrid">
               {data.meat &&
                 data.meat.map(item => {
@@ -134,6 +135,7 @@ function Index(props) {
               </div>
             </div>
             <h2>Veggie Pizzas</h2>
+            <p className="subtitle">14″ crispy sourdough crust</p>
             <div className="menuGrid">
               {data.veggie &&
                 data.veggie.map(item => {
@@ -371,6 +373,11 @@ function Index(props) {
         }
 
         .column {
+        }
+
+        .subtitle {
+          margin-top: -1rem;
+          padding-bottom: 1rem;
         }
 
         .heroImageGrid {

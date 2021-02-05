@@ -23,8 +23,12 @@ function Index(props) {
               <p>
                 Our food trailer is a unique, fully self contained wood fire
                 pizza kitchen. We have it parked in the Sunrise Parking Lot at
-                Mount Washington where it will remain through the 2020⁠–⁠2021
-                ski season.
+                Mount Washington where it will remain through the 2020⁠–⁠⁠2021
+                ski season. The team will be serving personal sized pizzas
+                (roughly 10”), cooked to order. Hot chocolate and coffee are
+                also available. Pizzas take around 5–⁠⁠⁠10 minutes to cook, so
+                you can get a hot meal quickly and then get back out on the
+                slopes.
               </p>
               <a
                 className="info"
