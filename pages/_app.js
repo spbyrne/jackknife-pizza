@@ -11,6 +11,14 @@ const App = ({ Component, pageProps }) => {
     <>
       <Head>
         <title>Jackknife Pizza</title>
+        <meta property="og:type" content="website" />
+        <meta name="og:title" property="og:title" content="Jackknife Pizza" />
+        <meta
+          name="og:description"
+          property="og:description"
+          content="Dedicated to creating high quality artisan pizza and baked goods. Our take out store front is located in Black Creek at the Saratoga Speedway, and our trailer serving wood fire pizza is located at Mount Washington."
+        />
+        <meta property="og:site_name" content="Jackknife Pizza" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="icon" href="/icons/icon-48x48.png" />
         <link rel="manifest" href="/manifest.webmanifest" />
