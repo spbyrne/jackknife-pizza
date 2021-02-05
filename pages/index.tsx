@@ -327,14 +327,14 @@ function Index(props) {
           position: relative;
           line-height: 1.2;
           font-size: 1.875rem;
-          margin: 0 0 1.5rem 0;
+          margin: 0 0 2rem 0;
           display: flex;
 
           &:after {
             content: '';
             display: block;
             position: absolute;
-            bottom: -1.125rem;
+            bottom: -1.5rem;
             left: 0;
             width: 5rem;
             height: 2px;
