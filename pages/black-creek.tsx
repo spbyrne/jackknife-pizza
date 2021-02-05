@@ -169,6 +169,7 @@ function Index(props) {
                       return (
                         <div className="menuItemSmall">
                           <h3 className="itemName">{item.name}</h3>
+                          <span className="dots"></span>
                           <p className="itemPrice">{item.price}</p>
                         </div>
                       )
@@ -183,6 +184,7 @@ function Index(props) {
                       return (
                         <div className="menuItemSmall">
                           <h3 className="itemName">{item.name}</h3>
+                          <span className="dots"></span>
                           <p className="itemPrice">{item.price}</p>
                         </div>
                       )
@@ -195,6 +197,7 @@ function Index(props) {
                       return (
                         <div className="menuItemSmall">
                           <h3 className="itemName">{item.name}</h3>
+                          <span className="dots"></span>
                           <p className="itemPrice">{item.price}</p>
                         </div>
                       )
@@ -436,7 +439,7 @@ function Index(props) {
         .contentMargin {
           :global(> *) {
             &:not(:last-child) {
-              margin-bottom: 1.75rem;
+              margin-bottom: 1rem;
             }
           }
         }
@@ -534,10 +537,20 @@ function Index(props) {
 
         .menuItemSmall {
           display: grid;
-          grid-template-areas: 'name price' 'description description';
-          grid-template-columns: 1fr auto;
+          grid-template-areas: 'name dots price' 'description description description';
+          grid-template-columns: auto 1fr auto;
           grid-template-rows: auto 1fr;
           align-self: stretch;
+        }
+
+        .dots {
+          display: block;
+          grid-area: dots;
+          width: calc(100% - 1rem);
+          margin: 0 0.5rem;
+          opacity: 1;
+          transform: translate3d(0, -5px, 0);
+          border-bottom: 3px dotted rgba(0, 0, 0, 0.1);
         }
 
         .itemName {
