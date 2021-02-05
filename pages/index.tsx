@@ -12,22 +12,28 @@ function Index(props) {
     <>
       <div className="home">
         <div className="container center">
-          <Link href="/">
-            <a className="heroLogo">
-              <Logo />
-            </a>
-          </Link>
-        </div>
-        <div className="spacer"></div>
-        <div className="container">
-          <p>
-            Jackknife Pizza is dedicated to creating high quality artisan pizza
-            and baked goods. Our take out store front is located in Black Creek
-            at the Saratoga Speedway through the Macaulay Road entrance. Our
-            second location is our food trailer, serving wood fire pizza. The
-            trailer is located at Mount Washington, in the Sunrise Parking lot,
-            for the duration of the 2020-21 ski season.
-          </p>
+          <div className="hero">
+            <div className="heroLeft">
+              <Link href="/">
+                <a className="heroLogo">
+                  <Logo />
+                </a>
+              </Link>
+            </div>
+            <div className="heroRight">
+              <p>
+                Jackknife Pizza is dedicated to creating high quality artisan
+                pizza and baked goods.
+              </p>
+              <p>
+                Our take out store front is located in Black Creek at the
+                Saratoga Speedway through the Macaulay Road entrance. Our second
+                location is our food trailer, serving wood fire pizza. The
+                trailer is located at Mount Washington, in the Sunrise Parking
+                lot, for the duration of the 2020-21 ski season.
+              </p>
+            </div>
+          </div>
         </div>
         <div className="spacer"></div>
         <div className="container">
@@ -84,6 +90,17 @@ function Index(props) {
                     </span>
                   </div>
                 </a>
+                <div className="filler"></div>
+                <div className="info">
+                  <div className="infoIcon"></div>
+                  <div className="infoText">
+                    <Link href="/black-creek">
+                      <a className="button">
+                        View Menu <Arrow />
+                      </a>
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="card">
@@ -126,6 +143,17 @@ function Index(props) {
                     </span>
                   </div>
                 </div>
+                <div className="filler"></div>
+                <div className="info">
+                  <div className="infoIcon"></div>
+                  <div className="infoText">
+                    <Link href="/mount-washington">
+                      <a className="button">
+                        View Menu <Arrow />
+                      </a>
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -135,6 +163,12 @@ function Index(props) {
         </div>
       </div>
       <style jsx>{`
+        p {
+          &:not(:last-child) {
+            margin-bottom: 1rem;
+          }
+        }
+
         .footer {
           position: relative;
           color: var(--color-white);
@@ -147,7 +181,7 @@ function Index(props) {
           position: relative;
           color: var(--color-white);
           overflow: hidden;
-          padding: 4rem 0 9rem 0;
+          padding: 4rem 0 4rem 0;
           min-height: 100vh;
 
           :global(p) {
@@ -155,9 +189,28 @@ function Index(props) {
           }
         }
 
+        .hero {
+          display: grid;
+          grid-gap: 1.5rem;
+
+          :global(p) {
+            font-size: 1.125rem;
+          }
+
+          @media (min-width: 800px) {
+            grid-template-columns: 1fr 3fr;
+          }
+        }
+
+        .heroLeft {
+          @media (min-width: 800px) {
+            padding-top: 0.375rem;
+          }
+        }
+
         .heroLogo {
           :global(svg) {
-            width: 12rem;
+            width: 13rem;
             max-width: 50vw;
             height: auto;
             margin-bottom: 0.5rem;
@@ -211,13 +264,23 @@ function Index(props) {
         .card {
           position: relative;
           background: black;
-          border-radius: 3px;
-          box-shadow: var(--box-shadow);
+          border-radius: 0.5rem;
+          display: flex;
+          flex-direction: column;
+          align-items: stretch;
+          justify-content: flex-start;
+          box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.1),
+            0 1rem 4rem -0.5rem var(--color-dark);
         }
 
         .cardContent {
-          padding: 1.5rem 2rem 2rem 2rem;
+          flex: 1 0 auto;
+          padding: 1.5rem 2rem 2.5rem 2rem;
           position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: stretch;
+          justify-content: flex-start;
           z-index: 2;
 
           :global(> *) {
@@ -227,7 +290,12 @@ function Index(props) {
           }
         }
 
+        .filler {
+          flex: 1 0 auto;
+        }
+
         .locationImageWrapper {
+          flex: 0 0 auto;
           position: relative;
           width: 100%;
           padding-bottom: 80%;
@@ -257,7 +325,7 @@ function Index(props) {
 
         .locationTitle {
           position: relative;
-          text-align: center;
+          line-height: 1.2;
           font-size: 1.875rem;
           margin: 0 0 1.5rem 0;
           display: flex;
@@ -325,8 +393,50 @@ function Index(props) {
         span {
           display: inline-block;
         }
+
+        .button {
+          display: inline-block;
+          align-items: center;
+          font-size: 1.125rem;
+          font-weight: bold;
+          letter-spacing: 0.5px;
+          border-radius: 2rem;
+          border: 2px solid rgba(255, 255, 255, 0.3);
+          line-height: 1;
+          padding: 0.75rem 1.5rem;
+          text-transform: uppercase;
+          transition: all 150ms ease-out;
+          font-family: futura-pt, sans-serif;
+
+          :global(svg) {
+            margin-left: 0.5rem;
+            margin-top: 0;
+            margin-bottom: -0.1rem;
+          }
+
+          &:hover {
+            border: 2px solid rgba(255, 255, 255, 1);
+          }
+        }
       `}</style>
     </>
+  )
+}
+
+const Arrow = () => {
+  return (
+    <svg
+      width="19"
+      height="19"
+      viewBox="0 0 19 19"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9.33492 18.5969L18.2838 9.64799L9.33492 0.69913L7.27526 2.74991L12.6819 8.14764H0.0131836V11.1483H12.6819L7.27526 16.555L9.33492 18.5969Z"
+        fill="inherit"
+      />
+    </svg>
   )
 }
 
