@@ -116,17 +116,12 @@ function Index(props) {
             </div>
           </div>
         </div>
-        <div className="heroBackground">
-          <img src="/images/oven1.jpg" alt="" />
-        </div>
       </div>
       <style jsx>{`
         .footer {
           position: relative;
-          color: var(--color-white);
           overflow: hidden;
-          padding: 8rem 0 4rem 0;
-          border-top: 8px solid var(--color-red);
+          padding: 7rem 0 2rem 0;
         }
 
         .hero {
