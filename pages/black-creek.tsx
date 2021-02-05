@@ -19,10 +19,14 @@ function Index(props) {
                   <Logo />
                 </a>
               </Link>
+              <h2>Black Creek Location</h2>
               <p>
-                Jackknife Pizza is a unique take on traditional Neapolitan style
-                pizza. We provide a wide range of delicious and interesting
-                topping combinations with a crispy sourdough crust.
+                Jackknife Pizza provides a wide range of delicious and
+                interesting topping combinations with a crispy sourdough crust.
+                We also offer fresh bagels daily through the Black Creek
+                location. We make our own gluten free flour and potato hybrid
+                crust for those that are gluten sensitive, and we offer a dairy
+                free cheese option.
               </p>
               <a
                 className="info"
@@ -245,7 +249,8 @@ function Index(props) {
           border-bottom: 8px solid var(--color-red);
 
           :global(p) {
-            font-size: 1.25rem;
+            font-size: 1.125rem;
+            padding-bottom: 0.5rem;
           }
         }
 
