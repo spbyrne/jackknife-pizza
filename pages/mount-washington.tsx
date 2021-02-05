@@ -23,7 +23,7 @@ function Index(props) {
                   <Logo />
                 </a>
               </Link>
-              <h2>Mount Washington Location</h2>
+              <h2 className="locationName">Mount Washington Location</h2>
               <p>
                 Our food trailer is a unique, fully self contained wood fire
                 pizza kitchen. We have it parked in the Sunrise Parking Lot at
@@ -143,13 +143,18 @@ function Index(props) {
 
         .heroLogo {
           display: inline-block;
+          cursor: pointer;
 
           :global(svg) {
             width: 13rem;
             max-width: 50vw;
             height: auto;
-            margin-bottom: 0.5rem;
           }
+        }
+
+        .locationName {
+          margin-top: 1rem;
+          margin-bottom: 1.5rem !important;
         }
 
         .reopening {

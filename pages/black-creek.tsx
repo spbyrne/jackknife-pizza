@@ -23,7 +23,7 @@ function Index(props) {
                   <Logo />
                 </a>
               </Link>
-              <h2>Black Creek Location</h2>
+              <h2 className="locationName">Black Creek Location</h2>
               <p>
                 Jackknife Pizza provides a wide range of delicious and
                 interesting topping combinations with a crispy sourdough crust.
@@ -273,13 +273,18 @@ function Index(props) {
 
         .heroLogo {
           display: inline-block;
+          cursor: pointer;
 
           :global(svg) {
             width: 13rem;
             max-width: 50vw;
             height: auto;
-            margin-bottom: 0.5rem;
           }
+        }
+
+        .locationName {
+          margin-top: 1rem;
+          margin-bottom: 1.5rem !important;
         }
 
         .reopening {
@@ -466,7 +471,7 @@ function Index(props) {
         .contentMargin {
           :global(> *) {
             &:not(:last-child) {
-              margin-bottom: 1rem;
+              margin-bottom: 1.25rem;
             }
           }
         }
