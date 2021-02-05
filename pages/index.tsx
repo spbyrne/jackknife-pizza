@@ -30,7 +30,7 @@ function Index(props) {
                 Saratoga Speedway through the Macaulay Road entrance. Our second
                 location is our food trailer, serving wood fire pizza. The
                 trailer is located at Mount Washington, in the Sunrise Parking
-                lot, for the duration of the 2020-21 ski season.
+                lot, for the duration of the 2020⁠–⁠21 ski season.
               </p>
             </div>
           </div>
@@ -72,9 +72,9 @@ function Index(props) {
                   </div>
                   <div className="infoText">
                     <span className="phone">
-                      Open <b>4pm – 8pm</b>
+                      Open <b>4pm ⁠–⁠ 8pm</b>
                     </span>
-                    <span className="secondary">Wednesday – Sunday</span>
+                    <span className="secondary">Wednesday ⁠–⁠ Sunday</span>
                   </div>
                 </div>
                 <a className="info" href="tel:7784280014">
@@ -136,7 +136,7 @@ function Index(props) {
                   </div>
                   <div className="infoText">
                     <span className="phone">
-                      Open <b>10:30am – 4:00pm</b>
+                      Open <b>10:30am⁠ ⁠–⁠⁠ 4:00pm</b>
                     </span>
                     <span className="secondary">
                       Saturdays, Sundays & Holidays
