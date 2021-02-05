@@ -58,11 +58,6 @@
       "price": "20"
     },
     {
-      "name": "The Pickle Pizza",
-      "description": "Mozzarella, aged cheddar, Sweet Dijon and garlic drizzle, shaved pickles, fresh parmesan",
-      "price": "20"
-    },
-    {
       "name": "Honey Garlic",
       "description": "Garlic oil, mozzarella, aged cheddar, Big D’s honey parmesan",
       "price": "20"
@@ -76,6 +71,11 @@
       "name": "Cheeky Onion",
       "description": "Garlic oil, mozzarella, aged cheddar, caramelized onion, thyme, parmesan",
       "price": "22"
+    },
+    {
+      "name": "The Pickle Pizza",
+      "description": "Mozzarella, aged cheddar, Sweet Dijon and garlic drizzle, shaved pickles, fresh parmesan",
+      "price": "25"
     },
     {
       "name": "The S.S. Mush Rush",

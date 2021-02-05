@@ -443,19 +443,25 @@ function Index(props) {
         .dots {
           display: block;
           grid-area: dots;
-          width: calc(100% - 1.25rem);
-          margin: 0 0.75rem;
+          width: 100%;
+          margin: 0 -0.5rem;
           opacity: 1;
-          transform: translate3d(0, -5px, 0);
-          border-bottom: 3px dotted rgba(0, 0, 0, 0.2);
+          transform: translate3d(0, -4px, 0);
+          border-bottom: 3px dotted rgba(0, 0, 0, 0.1);
         }
 
         .itemName {
           margin: 0;
           grid-area: name;
-          line-height: 1.2;
+          line-height: 1;
           font-size: 1.2rem;
           font-weight: 600;
+          margin-right: 1rem;
+        }
+
+        .itemNameSmall {
+          font-size: 1rem;
+          font-weight: 500;
         }
 
         .itemName--small {
@@ -475,7 +481,7 @@ function Index(props) {
         .itemPrice {
           margin: 0;
           grid-area: price;
-          line-height: 1.2;
+          line-height: 1;
           font-size: 1.2rem;
           text-align: right;
           color: var(--color-red);
