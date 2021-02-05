@@ -3,6 +3,7 @@ import MapIcon from '../public/images/map-pin.svg'
 import PhoneIcon from '../public/images/phone.svg'
 import TimeIcon from '../public/images/time.svg'
 import Image from 'next/image'
+import Head from 'next/head'
 import Link from 'next/link'
 
 import data from '../data/menu.json'
@@ -10,6 +11,9 @@ import data from '../data/menu.json'
 function Index(props) {
   return (
     <>
+      <Head>
+        <title>Jackknife Pizza –⁠ Welcome</title>
+      </Head>
       <div className="home">
         <div className="container center">
           <div className="hero">

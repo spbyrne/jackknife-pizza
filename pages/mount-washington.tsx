@@ -4,12 +4,16 @@ import PhoneIcon from '../public/images/phone.svg'
 import TimeIcon from '../public/images/time.svg'
 import Image from 'next/image'
 import Link from 'next/link'
+import Head from 'next/head'
 
 import data from '../data/menu-washington.json'
 
 function Index(props) {
   return (
     <>
+      <Head>
+        <title>Jackknife Pizza –⁠ Mount Washington Location</title>
+      </Head>
       <div className="hero">
         <div className="container">
           <div className={['columns', 'columns-center'].join(' ')}>
