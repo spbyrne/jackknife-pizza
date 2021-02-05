@@ -70,7 +70,7 @@ function Index(props) {
               <div className="heroImageGrid">
                 <div className="gridItem">
                   <Image
-                    src="/images/finish2.jpg"
+                    src="/images/black-creek-oven.jpg"
                     width="800"
                     height="533"
                     alt=""
@@ -78,7 +78,7 @@ function Index(props) {
                 </div>
                 <div className="gridItem">
                   <Image
-                    src="/images/jim.jpg"
+                    src="/images/finish2.jpg"
                     width="800"
                     height="533"
                     alt=""
@@ -253,7 +253,7 @@ function Index(props) {
           display: inline-block;
 
           :global(svg) {
-            width: 15rem;
+            width: 13rem;
             max-width: 50vw;
             height: auto;
             margin-bottom: 0.5rem;
