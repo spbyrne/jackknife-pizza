@@ -139,7 +139,7 @@ function Index(props) {
                       Open <b>10:30am⁠ ⁠–⁠⁠ 4:00pm</b>
                     </span>
                     <span className="secondary">
-                      Saturdays, Sundays & Holidays
+                      Fridays, Saturdays, Sundays & Holidays
                     </span>
                   </div>
                 </div>
