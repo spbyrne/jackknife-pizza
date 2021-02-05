@@ -73,12 +73,7 @@ function Index(props) {
             <div className="column">
               <div className="heroImageGrid">
                 <div className="gridItem">
-                  <Image
-                    src="/images/black-creek-oven.jpg"
-                    width="800"
-                    height="533"
-                    alt=""
-                  />
+                  <img src="/images/black-creek-oven.jpg" alt="" />
                 </div>
                 <div className="gridItem">
                   <Image

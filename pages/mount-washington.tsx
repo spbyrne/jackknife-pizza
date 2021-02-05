@@ -5,7 +5,7 @@ import TimeIcon from '../public/images/time.svg'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import data from '../data/menu.json'
+import data from '../data/menu-washington.json'
 
 function Index(props) {
   return (
@@ -59,141 +59,39 @@ function Index(props) {
             <div className="column">
               <div className="heroImageGrid">
                 <div className="gridItem">
-                  <Image
-                    src="/images/black-creek-oven.jpg"
-                    width="800"
-                    height="533"
-                    alt=""
-                  />
+                  <img src="/images/mount-washington-trees.jpg" alt="" />
                 </div>
                 <div className="gridItem">
-                  <Image
-                    src="/images/finish2.jpg"
-                    width="800"
-                    height="533"
-                    alt=""
-                  />
+                  <img src="/images/mount-washington.jpg" alt="" />
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="heroBackground">
-          <Image src="/images/oven1.jpg" layout="fill" alt="" />
+        <div className="heroBackground blurred">
+          <Image
+            src="/images/mount-washington-trees.jpg"
+            layout="fill"
+            alt=""
+          />
         </div>
       </div>
       <div className="menu">
         <div className="container">
           <div className="paper contentMargin">
-            <h2>Meat Pizzas</h2>
+            <h2>Menu</h2>
             <div className="menuGrid">
-              {data.meat &&
-                data.meat.map(item => {
+              {data &&
+                data.map(item => {
                   return (
                     <div className="menuItem">
                       <h3 className="itemName">{item.name}</h3>
+                      <span className="dots"></span>
                       <p className="itemDescription">{item.description}</p>
                       <p className="itemPrice">{item.price}</p>
                     </div>
                   )
                 })}
-            </div>
-            <div className="menuImageGrid">
-              <div className="gridItem">
-                <Image
-                  src="/images/prep3.jpg"
-                  width="1000"
-                  height="638"
-                  alt=""
-                />
-              </div>
-              <div className="gridItem">
-                <Image
-                  src="/images/finish1.jpg"
-                  width="1000"
-                  height="638"
-                  alt=""
-                />
-              </div>
-              <div className="gridItem">
-                <Image
-                  src="/images/bagels.jpg"
-                  width="720"
-                  height="720"
-                  alt=""
-                />
-              </div>
-            </div>
-            <h2>Veggie Pizzas</h2>
-            <div className="menuGrid">
-              {data.veggie &&
-                data.veggie.map(item => {
-                  return (
-                    <div className="menuItem">
-                      <h3 className="itemName">{item.name}</h3>
-                      <p className="itemDescription">{item.description}</p>
-                      <p className="itemPrice">{item.price}</p>
-                    </div>
-                  )
-                })}
-            </div>
-            <h2>Bagel Sandwiches</h2>
-            <div className="menuGrid">
-              {data.sandwiches &&
-                data.sandwiches.map(item => {
-                  return (
-                    <div className="menuItem">
-                      <h3 className="itemName">{item.name}</h3>
-                      <p className="itemDescription">{item.description}</p>
-                      <p className="itemPrice">{item.price}</p>
-                    </div>
-                  )
-                })}
-            </div>
-            <div className="columns">
-              <div className="column contentMargin">
-                <h2>Alterations</h2>
-                <div className="menuList">
-                  {data.alterations &&
-                    data.alterations.map(item => {
-                      return (
-                        <div className="menuItemSmall">
-                          <h3 className="itemName">{item.name}</h3>
-                          <span className="dots"></span>
-                          <p className="itemPrice">{item.price}</p>
-                        </div>
-                      )
-                    })}
-                </div>
-              </div>
-              <div className="column contentMargin">
-                <h2>Soup of the Day</h2>
-                <div className="menuList">
-                  {data.soup &&
-                    data.soup.map(item => {
-                      return (
-                        <div className="menuItemSmall">
-                          <h3 className="itemName">{item.name}</h3>
-                          <span className="dots"></span>
-                          <p className="itemPrice">{item.price}</p>
-                        </div>
-                      )
-                    })}
-                </div>
-                <h2>Island Style Bagels</h2>
-                <div className="menuList">
-                  {data.bagels &&
-                    data.bagels.map(item => {
-                      return (
-                        <div className="menuItemSmall">
-                          <h3 className="itemName">{item.name}</h3>
-                          <span className="dots"></span>
-                          <p className="itemPrice">{item.price}</p>
-                        </div>
-                      )
-                    })}
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -316,6 +214,12 @@ function Index(props) {
           :global(tr:last-child td) {
             padding-bottom: 1rem;
           }
+        }
+
+        .blurred {
+          filter: blur(1.5px);
+          transform-origin: 50% 50%;
+          transform: scale3d(1.02, 1.02, 1);
         }
 
         .heroBackground {
@@ -518,11 +422,9 @@ function Index(props) {
 
         .menuItem {
           display: grid;
-          grid-template-areas: 'name price' 'description description';
-          grid-template-columns: 1fr auto;
+          grid-template-areas: 'name dots price' 'description description description';
+          grid-template-columns: auto 1fr auto;
           grid-template-rows: auto 1fr;
-          padding-bottom: 1rem;
-          border-bottom: 2px solid rgba(0, 0, 0, 0.1);
           align-self: stretch;
         }
 
@@ -537,11 +439,11 @@ function Index(props) {
         .dots {
           display: block;
           grid-area: dots;
-          width: calc(100% - 1rem);
-          margin: 0 0.5rem;
+          width: calc(100% - 1.25rem);
+          margin: 0 0.75rem;
           opacity: 1;
           transform: translate3d(0, -5px, 0);
-          border-bottom: 3px dotted rgba(0, 0, 0, 0.1);
+          border-bottom: 3px dotted rgba(0, 0, 0, 0.2);
         }
 
         .itemName {
