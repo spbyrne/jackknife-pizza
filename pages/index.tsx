@@ -238,7 +238,11 @@ function Index(props) {
           display: block;
           margin: 0 auto;
           max-width: 1360px;
-          padding: 0 2rem;
+          padding: 0 1.5rem;
+
+          @media (min-width: 500px) {
+            padding: 0 2rem;
+          }
         }
 
         .center {
@@ -397,6 +401,7 @@ function Index(props) {
         .button {
           display: inline-block;
           align-items: center;
+          white-space: nowrap;
           font-size: 1.125rem;
           font-weight: bold;
           letter-spacing: 0.5px;
