@@ -179,6 +179,16 @@ const App = ({ Component, pageProps }) => {
             display: flex;
             flex-direction: column;
           }
+          h2,
+          h3,
+          h4 {
+            margin: 0;
+            line-height: 1;
+
+            &:not(:first-child) {
+              margin-top: 2rem;
+            }
+          }
           h2 {
             font-size: 2rem;
           }

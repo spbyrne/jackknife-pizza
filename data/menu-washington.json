@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Cheese",
+    "description": "Tomato sauce, mozzarella, aged cheddar, parmesan",
+    "price": "13"
+  },
+  {
+    "name": "Honey Garlic",
+    "description": "Garlic oil, mozzarella, aged cheddar, local honey, parmesan",
+    "price": "14"
+  },
+  {
+    "name": "Pickle",
+    "description": "Garlic oil, mozzarella, aged cheddar, sliced pickles, sweet dijon, parmesan",
+    "price": "15"
+  },
+  {
+    "name": "Pepperoni",
+    "description": "Tomato sauce, mozzarella, aged cheddar, pepperoni, parmesan",
+    "price": "15"
+  },
+  {
+    "name": "Honey Garlic Pepperoni",
+    "description": "Garlic oil, mozzarella, aged cheddar, local honey, parmesan",
+    "price": "15"
+  },
+  {
+    "name": "Ham Honey Garlic",
+    "description": "Garlic oil, mozzarella, aged cheddar, local honey, shaved ham, parmesan",
+    "price": "15"
+  }
+]

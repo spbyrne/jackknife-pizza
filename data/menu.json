@@ -41,7 +41,7 @@
       "price": "27"
     },
     {
-      "name": "Meat Pizza",
+      "name": "The Triple Threat",
       "description": "Tomato sauce, mozzarella, aged cheddar, shaved ham, pepperoni, bacon bits, parmesan",
       "price": "29"
     }
@@ -73,6 +73,11 @@
       "price": "22"
     },
     {
+      "name": "The Pickle Pizza",
+      "description": "Mozzarella, aged cheddar, Sweet Dijon and garlic drizzle, shaved pickles, fresh parmesan",
+      "price": "25"
+    },
+    {
       "name": "The S.S. Mush Rush",
       "description": "Garlic oil, mozzarella, aged cheddar, thyme, pickled onions, mushrooms, lemon and truffle crème drizzle",
       "price": "25"
@@ -102,6 +107,16 @@
     {
       "name": "Dairy Free Cheese",
       "price": "2"
+    }
+  ],
+  "dips": [
+    {
+      "name": "Dill Dip",
+      "price": "1"
+    },
+    {
+      "name": "Chipotle Dip",
+      "price": "1"
     }
   ],
   "soup": [
