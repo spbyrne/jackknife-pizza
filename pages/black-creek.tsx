@@ -13,6 +13,11 @@ function Index(props) {
     <>
       <Head>
         <title>Jackknife Pizza –⁠ Black Creek Location</title>
+        <meta
+          name="og:description"
+          property="og:description"
+          content="We provide a wide range of delicious and interesting topping combinations with a crispy sourdough crust. We also offer fresh bagels through the Black Creek location."
+        />
       </Head>
       <div className="hero">
         <div className="container">

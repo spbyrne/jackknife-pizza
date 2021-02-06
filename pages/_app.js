@@ -22,7 +22,7 @@ const App = ({ Component, pageProps }) => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="icon" href="/icons/icon-48x48.png" />
         <link rel="manifest" href="/manifest.webmanifest" />
-        <meta name="theme-color" content="#B53E39" />
+        <meta name="theme-color" content="#000000" />
         <link
           rel="apple-touch-icon"
           sizes="48x48"
