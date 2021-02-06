@@ -37,6 +37,7 @@ function Index(props) {
                 crust for those that are gluten sensitive, and we offer a dairy
                 free cheese option.
               </p>
+
               <a
                 className="info"
                 href="https://www.google.com/maps/place/Saratoga+Speedway+Ltd/@49.8525957,-125.1364392,14.03z/data=!4m5!3m4!1s0x54881c810ddc98f7:0x99868eb4a2eadeb3!8m2!3d49.8536695!4d-125.137549"
@@ -45,9 +46,8 @@ function Index(props) {
                   <MapIcon />
                 </div>
                 <div className="infoText">
-                  <span>
-                    <b>Saratoga Speedway</b>,{' '}
-                    <span>Black Creek, British Columbia.</span>
+                  <span className="phone">
+                    <b>Saratoga Speedway</b>
                   </span>
                   <span className="secondary">
                     2380 Macaulay Rd, Black Creek, BC
@@ -60,9 +60,9 @@ function Index(props) {
                 </div>
                 <div className="infoText">
                   <span className="phone">
-                    Open <b>4pm – 8pm</b>
+                    Open <b>4pm</b> – <b>8pm</b>
                   </span>
-                  <span className="secondary">Wednesday – Sunday</span>
+                  <span className="secondary">Wednesday ⁠–⁠ Sunday</span>
                 </div>
               </div>
               <a className="info" href="tel:7784280014">
@@ -502,7 +502,7 @@ function Index(props) {
         }
 
         .phone {
-          font-size: 1.25rem;
+          font-size: 1.125rem;
         }
 
         .secondary {

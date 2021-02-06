@@ -61,9 +61,8 @@ function Index(props) {
                     <MapIcon />
                   </div>
                   <div className="infoText">
-                    <span>
-                      <b>Saratoga Speedway</b>,{' '}
-                      <span>Black Creek, British Columbia.</span>
+                    <span className="phone">
+                      <b>Saratoga Speedway</b>
                     </span>
                     <span className="secondary">
                       2380 Macaulay Rd, Black Creek, BC
@@ -76,7 +75,7 @@ function Index(props) {
                   </div>
                   <div className="infoText">
                     <span className="phone">
-                      Open <b>4pm ⁠–⁠ 8pm</b>
+                      Open <b>4pm</b> – <b>8pm</b>
                     </span>
                     <span className="secondary">Wednesday ⁠–⁠ Sunday</span>
                   </div>
@@ -126,11 +125,11 @@ function Index(props) {
                     <MapIcon />
                   </div>
                   <div className="infoText">
-                    <span>
+                    <span className="phone">
                       <b>Sunrise Parking Lot</b> at <b>Mount Washington</b>
                     </span>
                     <span className="secondary">
-                      1 Strathcona Pkwy, Comox-Strathcona C, BC
+                      1 Strathcona Pkwy, Courtenay, BC
                     </span>
                   </div>
                 </a>
@@ -140,7 +139,7 @@ function Index(props) {
                   </div>
                   <div className="infoText">
                     <span className="phone">
-                      Open <b>10:30am⁠ ⁠–⁠⁠ 4:00pm</b>
+                      Open <b>10:30am</b> – <b>4:00pm</b>
                     </span>
                     <span className="secondary">
                       Fridays, Saturdays, Sundays & Holidays
@@ -272,6 +271,7 @@ function Index(props) {
         .card {
           position: relative;
           background: black;
+          overflow: hidden;
           border-radius: 0.5rem;
           display: flex;
           flex-direction: column;
@@ -351,20 +351,6 @@ function Index(props) {
           }
         }
 
-        .infoIcon {
-          display: block;
-          height: 100%;
-          color: var(--color-red);
-          margin-right: 1rem;
-
-          :global(svg) {
-            display: block;
-            height: 100%;
-            width: auto;
-            color: var(--color-red);
-          }
-        }
-
         .info {
           display: grid;
           grid-template-columns: 2.5rem 1fr;
@@ -386,7 +372,7 @@ function Index(props) {
         }
 
         .phone {
-          font-size: 1.25rem;
+          font-size: 1.125rem;
         }
 
         .secondary {
@@ -396,6 +382,10 @@ function Index(props) {
 
         .infoText {
           display: block;
+
+          :global(b) {
+            white-space: nowrap;
+          }
         }
 
         span {

@@ -42,11 +42,11 @@ function Index(props) {
                   <MapIcon />
                 </div>
                 <div className="infoText">
-                  <span>
+                  <span className="phone">
                     <b>Sunrise Parking Lot</b> at <b>Mount Washington</b>
                   </span>
                   <span className="secondary">
-                    1 Strathcona Pkwy, Comox-Strathcona C, BC
+                    1 Strathcona Pkwy, Courtenay, BC
                   </span>
                 </div>
               </a>
@@ -56,7 +56,7 @@ function Index(props) {
                 </div>
                 <div className="infoText">
                   <span className="phone">
-                    Open <b>10:30am – 4:00pm</b>
+                    Open <b>10:30am</b> – <b>4:00pm</b>
                   </span>
                   <span className="secondary">
                     Fridays, Saturdays, Sundays & Holidays
@@ -76,7 +76,7 @@ function Index(props) {
             </div>
           </div>
         </div>
-        <div className="heroBackground blurred">
+        <div className="heroBackground">
           <Image
             src="/images/mount-washington-trees.jpg"
             layout="fill"
@@ -368,7 +368,7 @@ function Index(props) {
         }
 
         .phone {
-          font-size: 1.25rem;
+          font-size: 1.125rem;
         }
 
         .secondary {
