@@ -2,22 +2,17 @@
   "meat": [
     {
       "name": "Pepperoni",
-      "description": "Tomato sauce, mozzarella, aged cheddar, pepperoni,  parmesan",
+      "description": "Tomato sauce, mozzarella, aged cheddar, pepperoni, parmesan",
       "price": "24"
     },
     {
+      "name": "Pickle Pepp",
+      "description": "Sweet dijon and garlic oil, mozzarella, aged cheddar, pickles, pepperoni, parmesan",
+      "price": "25"
+    },
+    {
       "name": "Jackknife Pepperoni",
-      "description": "Garlic oil, mozzarella, aged cheddar, pickled jalapeños, pepperoni, Big D’s honey, parmesan",
-      "price": "25"
-    },
-    {
-      "name": "The Pepperoni Fungi",
-      "description": "Tomato sauce, mozzarella, aged cheddar, thyme, mushrooms, pepperoni, parmesan",
-      "price": "25"
-    },
-    {
-      "name": "Prosciutto",
-      "description": "Garlic oil, mozzarella, aged cheddar, pickled onions, shaved prosciutto, parmesan",
+      "description": "Garlic oil, mozzarella, aged cheddar, pickled jalapenos, pepperoni, local honey, parmesan",
       "price": "25"
     },
     {
@@ -26,61 +21,98 @@
       "price": "25"
     },
     {
+      "name": "Prosciutto",
+      "description": "Garlic oil, mozzarella, aged cheddar, pickled onions, shaved prosciutto, parmesan",
+      "price": "25"
+    },
+    {
+      "name": "Presto Pesto",
+      "description": "House made basil pesto, fresh mozzarella, prosciutto, fresh arugula, balsamic reduction",
+      "price": "26"
+    },
+    {
       "name": "Chili Lime Chicken",
       "description": "Garlic oil, mozzarella, aged cheddar, chili lime marinated chicken, corn, black beans, red onion, cilantro, parmesan",
       "price": "27"
     },
     {
+      "name": "Jackknife BBQ Chicken",
+      "description": "Jackknife BBQ sauce, mozzarella, aged cheddar, chicken, pineapple, candied jalapenos, parmesan",
+      "price": "27"
+    },
+    {
       "name": "Sausage",
-      "description": "Tomato sauce, mozzarella, aged cheddar, pickled jalapeños, garlic pork sausage, fennel seeds, parmesan",
+      "description": "Tomato sauce, mozzarella, aged cheddar, pickled jalapenos, garlic pork sausage, fennel seeds, parmesan",
       "price": "27"
     },
     {
-      "name": "Potato Bacon",
-      "description": "Garlic oil, mozzarella, aged cheddar, rosemary, sliced potato, bacon bits, caramelized onions, parmesan",
+      "name": "Jalapeno Popper",
+      "description": "Garlic oil, mozzarella, aged cheddar, fresh jalapenos, cream cheese pillows, bacon bits, parmesan",
       "price": "27"
     },
     {
-      "name": "The Triple Threat",
+      "name": "Triple Threat",
       "description": "Tomato sauce, mozzarella, aged cheddar, shaved ham, pepperoni, bacon bits, parmesan",
       "price": "29"
     }
   ],
   "veggie": [
     {
-      "name": "Garlic Bread",
-      "description": "Garlic oil, mozzarella, aged cheddar, parmesan",
-      "price": "15"
-    },
-    {
-      "name": "The Cheese",
+      "name": "Cheese",
       "description": "Tomato sauce, mozzarella, aged cheddar, parmesan",
       "price": "20"
     },
     {
       "name": "Honey Garlic",
-      "description": "Garlic oil, mozzarella, aged cheddar, Big D’s honey parmesan",
+      "description": "Garlic oil, mozzarella, aged cheddar, local honey, parmesan",
       "price": "20"
     },
     {
+      "name": "Pickle Dijon",
+      "description": "Garlic dijon, mozzarella, aged cheddar, sliced pickles, parmesan",
+      "price": "22"
+    },
+    {
       "name": "Gateway to Olives",
-      "description": "Tomato sauce, mozzarella, aged cheddar, pickled jalapeños, pickled onions, kalamata olives, parmesan",
+      "description": "Tomato sauce, mozzarella, aged cheddar, pickled jalapenos, pickled onions, kalamata olives, parmesan",
       "price": "22"
     },
     {
-      "name": "Cheeky Onion",
-      "description": "Garlic oil, mozzarella, aged cheddar, caramelized onion, thyme, parmesan",
+      "name": "Margherita",
+      "description": "Tomato sauce, fresh mozzarella, basil, parmesan",
       "price": "22"
     },
     {
-      "name": "The Pickle Pizza",
-      "description": "Mozzarella, aged cheddar, Sweet Dijon and garlic drizzle, shaved pickles, fresh parmesan",
-      "price": "25"
-    },
-    {
-      "name": "The S.S. Mush Rush",
+      "name": "S.S. Mush Rush",
       "description": "Garlic oil, mozzarella, aged cheddar, thyme, pickled onions, mushrooms, lemon and truffle crème drizzle",
       "price": "25"
+    },
+    {
+      "name": "Pepper Parade",
+      "description": "Garlic oil, mozzarella, aged cheddar, bell peppers, kalamata olives, fresh jalapenos, pickled onion, parmesan",
+      "price": "25"
+    },
+    {
+      "name": "Pesto Veggie",
+      "description": "House made basil pesto, mozzarella, aged cheddar, red onion, cherry tomato, peppers, mushrooms, spinach, feta",
+      "price": "26"
+    }
+  ],
+  "other": [
+    {
+      "name": "Baked Brie Tear and Share (14”)",
+      "description": "Garlic oil, Natural Pastures brie, herbs, parmesan",
+      "price": "22"
+    },
+    {
+      "name": "Garlic Bread (10”)",
+      "description": "Garlic, mozzarella, aged cheddar, parmesan",
+      "price": "15"
+    },
+    {
+      "name": "Cookies and Cream Dessert Pizza (10”)",
+      "description": "Condensed milk, crumbled oreos, strawberries",
+      "price": "15"
     }
   ],
   "alterations": [
@@ -106,43 +138,104 @@
     },
     {
       "name": "Dairy Free Cheese",
-      "price": "2"
+      "price": "0"
+    }
+  ],
+  "combos": [
+    {
+      "name": "Single Sandwich combo",
+      "description": "1 bagel sandwich, 1 half salad, 1 drink",
+      "price": "16"
+    },
+    {
+      "name": "Two Sandwich Combo",
+      "description": "2 bagel sandwichs, 1 full salad, 2 drinks",
+      "price": "22"
+    },
+    {
+      "name": "Single Pizza combo",
+      "description": "1 pizza, 1 full salad, 2 drinks",
+      "price": "40"
+    },
+    {
+      "name": "Two Pizza combo",
+      "description": "2 pizzas, 1 full salad, 3 drinks",
+      "price": "65"
+    },
+    {
+      "name": "Family Pizza Combo",
+      "description": "3 pizzas, 2 full salads, 5 drinks",
+      "price": "100"
     }
   ],
   "dips": [
     {
-      "name": "Dill Dip",
+      "name": "Jackknife Dill",
       "price": "1"
     },
     {
-      "name": "Chipotle Dip",
+      "name": "Chipotle Lime Aioli",
+      "price": "1"
+    },
+    {
+      "name": "Aioli (garlic dip)",
+      "price": "1"
+    },
+    {
+      "name": "Marinara",
       "price": "1"
     }
   ],
   "soup": [
     {
-      "name": "16oz serving",
-      "price": "5"
+      "name": "",
+      "price": ""
+    }
+  ],
+  "salad": [
+    {
+      "name": "House Green Salad",
+      "description": "Salad greens, carrot & beet spirals, tomato, red onion, sprouts And your choice sesame ginger dressing cherry balsamic dressing Jackknife dill caesar dressing",
+      "halfPrice": "6.5",
+      "fullPrice": "13"
     },
     {
-      "name": "Soup & Toasted Bagel",
-      "price": "7"
+      "name": "Jackknife Dill Caesar",
+      "description": "Romaine, parm, bacon bits, sourdough croutons, jackknife dill caesar dressing",
+      "halfPrice": "7.5",
+      "fullPrice": "15"
+    },
+    {
+      "name": "Berry Salad",
+      "description": "Salad greens, carrot & beet spirals, tomato, red onion, sprouts, berries, goat cheese, cherry balsamic dressing",
+      "halfPrice": "7.5",
+      "fullPrice": "15"
+    },
+    {
+      "name": "Asian Salad",
+      "description": "Salad greens, carrot & beet spirals, tomato, red onion, sprouts, almonds, mandarin orange, sesame ginger dressing",
+      "halfPrice": "7.5",
+      "fullPrice": "15"
     }
   ],
   "bagels": [
     {
-      "name": "Single",
+      "name": "Fresh Single",
       "price": "2.5"
     },
     {
-      "name": "6 Pack",
-      "price": "12"
+      "name": "12 Pack fresh",
+      "price": "24"
+    },
+    {
+      "name": "12 Pack frozen",
+      "price": "19"
     }
   ],
   "sandwiches": [
     {
       "name": "Honey Garlic",
-      "description": "Big D’s honey, aged cheddar, mozzarella, garlic",
+      "description": "Local honey, aged cheddar, mozzarella, garlic",
       "price": "7"
     },
     {
@@ -154,6 +247,26 @@
       "name": "Mushroom Melt",
       "description": "Mushroom, aged cheddar, mozzarella, thyme, pickled red onions, lemon and truffle crème drizzle ",
       "price": "9"
+    },
+    {
+      "name": "Pepperoni",
+      "description": "Tomato sauce, aged cheddar, mozzarella, pepperoni",
+      "price": "9"
+    },
+    {
+      "name": "Pickle Dijon",
+      "description": "Sweet Dijon and garlic oil, aged cheddar, mozzarella, pickles, parmesan",
+      "price": "9"
+    },
+    {
+      "name": "Gateway to Olives",
+      "description": "Tomato sauce, aged cheddar, mozzarella, kalamata olives, pickled jalapenos, pickled onion",
+      "price": "9"
+    },
+    {
+      "name": "Salmon Lox",
+      "description": "Garlic oil, maple syrup infused cream cheese, salmon lox, pickled onions, lemon and caper oil drizzle",
+      "price": "12"
     }
   ]
 }

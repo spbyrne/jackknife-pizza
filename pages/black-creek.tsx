@@ -60,7 +60,7 @@ function Index(props) {
                 </div>
                 <div className="infoText">
                   <span className="phone">
-                    Open <b>4pm</b> – <b>8pm</b>
+                    Open <b>12pm</b> – <b>9pm</b>
                   </span>
                   <span className="secondary">Wednesday ⁠–⁠ Sunday</span>
                 </div>
@@ -103,7 +103,7 @@ function Index(props) {
       <div className="menu">
         <div className="container">
           <div className="paper contentMargin">
-            <h2>Meat Pizzas</h2>
+            <h2 className="menu-title">Meat Pizzas</h2>
             <p className="subtitle">14″ crispy sourdough crust</p>
             <div className="menuGrid">
               {data.meat &&
@@ -138,7 +138,7 @@ function Index(props) {
                 />
               </div>
             </div>
-            <h2>Veggie Pizzas</h2>
+            <h2 className="menu-title">Veggie Pizzas</h2>
             <p className="subtitle">14″ crispy sourdough crust</p>
             <div className="menuGrid">
               {data.veggie &&
@@ -152,7 +152,20 @@ function Index(props) {
                   )
                 })}
             </div>
-            <h2>Bagel Sandwiches</h2>
+            <h2 className="menu-title">Other Pizzas</h2>
+            <div className="menuGrid">
+              {data.other &&
+                data.other.map(item => {
+                  return (
+                    <div className="menuItem">
+                      <h3 className="itemName">{item.name}</h3>
+                      <p className="itemDescription">{item.description}</p>
+                      <p className="itemPrice">{item.price}</p>
+                    </div>
+                  )
+                })}
+            </div>
+            <h2 className="menu-title">Bagel Sandwiches</h2>
             <div className="menuGrid">
               {data.sandwiches &&
                 data.sandwiches.map(item => {
@@ -165,9 +178,44 @@ function Index(props) {
                   )
                 })}
             </div>
+            <h2 className="menu-title">Combo Meals</h2>
+            <div className="menuGrid">
+              {data.combos &&
+                data.combos.map(item => {
+                  return (
+                    <div className="menuItem">
+                      <h3 className="itemName">{item.name}</h3>
+                      <p className="itemDescription">{item.description}</p>
+                      <p className="itemPrice">{item.price}</p>
+                    </div>
+                  )
+                })}
+            </div>
+            <h2 className="menu-title">Salads</h2>
+            <div className="menuGrid">
+              {data.salad &&
+                data.salad.map(item => {
+                  return (
+                    <div className="salad">
+                      <h3 className="saladName">{item.name}</h3>
+                      <p className="saladDescription">{item.description}</p>
+                      <div className="saladPrice">
+                        <h4 className="priceName">Half</h4>
+                        <span className="saladDots"></span>
+                        <p className="priceNumber">{item.halfPrice}</p>
+                      </div>
+                      <div className="saladPrice">
+                        <h4 className="priceName">Full</h4>
+                        <span className="saladDots"></span>
+                        <p className="priceNumber">{item.fullPrice}</p>
+                      </div>
+                    </div>
+                  )
+                })}
+            </div>
             <div className="columns">
               <div className="column contentMargin">
-                <h3>Alterations</h3>
+                <h3 className="menu-title--small">Alterations</h3>
                 <div className="menuList">
                   {data.alterations &&
                     data.alterations.map(item => {
@@ -184,7 +232,7 @@ function Index(props) {
                 </div>
               </div>
               <div className="column contentMargin">
-                <h3>Dips</h3>
+                <h3 className="menu-title--small">Dips</h3>
                 <div className="menuList">
                   {data.dips &&
                     data.dips.map(item => {
@@ -199,22 +247,7 @@ function Index(props) {
                       )
                     })}
                 </div>
-                <h3>Soup of the Day</h3>
-                <div className="menuList">
-                  {data.soup &&
-                    data.soup.map(item => {
-                      return (
-                        <div className="menuItemSmall">
-                          <h4 className="itemName itemNameSmall">
-                            {item.name}
-                          </h4>
-                          <span className="dots"></span>
-                          <p className="itemPrice">{item.price}</p>
-                        </div>
-                      )
-                    })}
-                </div>
-                <h3>Island Style Bagels</h3>
+                <h3 className="menu-title--small">Island Style Bagels</h3>
                 <div className="menuList">
                   {data.bagels &&
                     data.bagels.map(item => {
@@ -230,6 +263,16 @@ function Index(props) {
                     })}
                 </div>
               </div>
+            </div>
+            <div className="menu-footer">
+              <p>
+                * All combos are subject to extra charges from the “Alterations
+                & Extras” section.
+              </p>
+              <p>
+                * Extra salad containers and utensils are complimentary with
+                combo meal purchases.
+              </p>
             </div>
           </div>
         </div>
@@ -255,6 +298,33 @@ function Index(props) {
         </div>
       </div>
       <style jsx>{`
+        .menu-title {
+          margin-bottom: 1.75rem !important;
+        }
+
+        .menu-title:not(:first-child) {
+          margin-top: 2.25rem;
+        }
+
+        .menu-title--small {
+          margin-bottom: 1.5rem !important;
+        }
+
+        .menu-title--small:not(:first-child) {
+          margin-top: 2rem;
+        }
+
+        .menu-footer {
+          font-style: italic;
+          opacity: 0.7;
+          text-align: center;
+          margin-top: 2rem;
+        }
+
+        .menu-footer p:not(:last-child) {
+          margin-bottom: 0.5rem;
+        }
+
         .footer {
           position: relative;
           color: var(--color-white);
@@ -570,6 +640,57 @@ function Index(props) {
           padding-bottom: 1rem;
           border-bottom: 2px solid rgba(0, 0, 0, 0.1);
           align-self: stretch;
+        }
+
+        .salad {
+          display: grid;
+          grid-gap: 0.5rem;
+          align-content: start;
+        }
+
+        .saladName {
+          margin: 0;
+          line-height: 1;
+          font-size: 1.2rem;
+          font-weight: 600;
+        }
+
+        .saladDescription {
+          margin: 0 0 0.25rem 0;
+          line-height: 1.2;
+          align-self: flex-start;
+          color: var(--color-dark);
+        }
+
+        .saladPrice {
+          width: 100%;
+          justify-content: space-between;
+          display: flex;
+          align-items: bottom;
+        }
+
+        .saladDots {
+          flex: 1 0 auto;
+          margin: 0 0.5rem;
+          opacity: 1;
+          transform: translate3d(0, -4px, 0);
+          border-bottom: 3px dotted rgba(0, 0, 0, 0.1);
+        }
+
+        .priceName {
+          flex: 0 0 auto;
+          margin: 0;
+          line-height: 1.25;
+          font-size: 0.8rem;
+          font-weight: 600;
+        }
+
+        .priceNumber {
+          flex: 0 0 auto;
+          line-height: 1;
+          font-size: 1rem;
+          text-align: right;
+          color: var(--color-red);
         }
 
         .menuItemSmall {

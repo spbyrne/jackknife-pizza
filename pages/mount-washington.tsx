@@ -25,44 +25,9 @@ function Index(props) {
               </Link>
               <h2 className="locationName">Mount Washington Location</h2>
               <p>
-                Our food trailer is a unique, fully self contained wood fire
-                pizza kitchen. We have it parked in the Sunrise Parking Lot at
-                Mount Washington where it will remain through the 2020⁠–⁠⁠2021
-                ski season. The team will be serving personal sized pizzas
-                (roughly 10”), cooked to order. Hot chocolate and coffee are
-                also available. Pizzas take around 5–⁠⁠⁠10 minutes to cook, so
-                you can get a hot meal quickly and then get back out on the
-                slopes.
+                Thank you for a great season! Our pizza trailer is on the move;
+                details to follow.
               </p>
-              <a
-                className="info"
-                href="https://www.google.com/maps/place/Mount+Washington+Skiing+Alpine+Resort/@49.7415308,-125.3012318,15z/data=!4m5!3m4!1s0x0:0x2587a153025666e6!8m2!3d49.7415308!4d-125.3012318"
-              >
-                <div className="infoIcon">
-                  <MapIcon />
-                </div>
-                <div className="infoText">
-                  <span className="phone">
-                    <b>Sunrise Parking Lot</b> at <b>Mount Washington</b>
-                  </span>
-                  <span className="secondary">
-                    1 Strathcona Pkwy, Courtenay, BC
-                  </span>
-                </div>
-              </a>
-              <div className="info">
-                <div className="infoIcon">
-                  <TimeIcon />
-                </div>
-                <div className="infoText">
-                  <span className="phone">
-                    Open <b>10:30am</b> – <b>4:00pm</b>
-                  </span>
-                  <span className="secondary">
-                    Fridays, Saturdays, Sundays & Holidays
-                  </span>
-                </div>
-              </div>
             </div>
             <div className="column">
               <div className="heroImageGrid">
@@ -84,26 +49,7 @@ function Index(props) {
           />
         </div>
       </div>
-      <div className="menu">
-        <div className="container">
-          <div className="paper contentMargin">
-            <h2>Menu</h2>
-            <div className="menuGrid">
-              {data &&
-                data.map(item => {
-                  return (
-                    <div className="menuItem">
-                      <h3 className="itemName">{item.name}</h3>
-                      <span className="dots"></span>
-                      <p className="itemDescription">{item.description}</p>
-                      <p className="itemPrice">{item.price}</p>
-                    </div>
-                  )
-                })}
-            </div>
-          </div>
-        </div>
-      </div>
+
       <div className="footer">
         <div className="container">
           <div className="columns">

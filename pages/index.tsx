@@ -33,8 +33,9 @@ function Index(props) {
                 Our take out store front is located in Black Creek at the
                 Saratoga Speedway through the Macaulay Road entrance. Our second
                 location is our food trailer, serving wood fire pizza. The
-                trailer is located at Mount Washington, in the Sunrise Parking
-                lot, for the duration of the 2020⁠–⁠21 ski season.
+                trailer was located at Mount Washington, in the Sunrise Parking
+                lot, for the duration of the 2020⁠–⁠21 ski season; a new
+                location is coming soon.
               </p>
             </div>
           </div>
@@ -75,7 +76,7 @@ function Index(props) {
                   </div>
                   <div className="infoText">
                     <span className="phone">
-                      Open <b>4pm</b> – <b>8pm</b>
+                      Open <b>12pm</b> – <b>9pm</b>
                     </span>
                     <span className="secondary">Wednesday ⁠–⁠ Sunday</span>
                   </div>
@@ -114,49 +115,19 @@ function Index(props) {
                 <div className="info">
                   <div className="infoIcon"></div>
                   <div className="infoText">
-                    <h2 className="locationTitle">Mount Washington</h2>
+                    <h2 className="locationTitle">Food Truck</h2>
                   </div>
                 </div>
                 <a
                   className="info"
                   href="https://www.google.com/maps/place/Mount+Washington+Skiing+Alpine+Resort/@49.7415308,-125.3012318,15z/data=!4m5!3m4!1s0x0:0x2587a153025666e6!8m2!3d49.7415308!4d-125.3012318"
                 >
-                  <div className="infoIcon">
-                    <MapIcon />
-                  </div>
-                  <div className="infoText">
-                    <span className="phone">
-                      <b>Sunrise Parking Lot</b> at <b>Mount Washington</b>
-                    </span>
-                    <span className="secondary">
-                      1 Strathcona Pkwy, Courtenay, BC
-                    </span>
-                  </div>
-                </a>
-                <div className="info">
-                  <div className="infoIcon">
-                    <TimeIcon />
-                  </div>
-                  <div className="infoText">
-                    <span className="phone">
-                      Open <b>10:30am</b> – <b>4:00pm</b>
-                    </span>
-                    <span className="secondary">
-                      Fridays, Saturdays, Sundays & Holidays
-                    </span>
-                  </div>
-                </div>
-                <div className="filler"></div>
-                <div className="info">
                   <div className="infoIcon"></div>
                   <div className="infoText">
-                    <Link href="/mount-washington">
-                      <a className="button">
-                        View Menu <Arrow />
-                      </a>
-                    </Link>
+                    <span className="phone">Details Coming Soon</span>
+                    <span className="secondary"></span>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
