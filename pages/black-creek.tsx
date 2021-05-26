@@ -2,6 +2,7 @@ import Logo from '../public/images/jackknife-logo.svg'
 import MapIcon from '../public/images/map-pin.svg'
 import PhoneIcon from '../public/images/phone.svg'
 import TimeIcon from '../public/images/time.svg'
+import DeliveryIcon from '../public/images/delivery.svg'
 import Image from 'next/image'
 import Link from 'next/link'
 import Head from 'next/head'
@@ -32,10 +33,8 @@ function Index(props) {
               <p>
                 Jackknife Pizza provides a wide range of delicious and
                 interesting topping combinations with a crispy sourdough crust.
-                We also offer fresh bagels daily through the Black Creek
-                location. We make our own gluten free flour and potato hybrid
-                crust for those that are gluten sensitive, and we offer a dairy
-                free cheese option.
+                We also offer fresh bagels daily through our Black Creek
+                location.
               </p>
 
               <a
@@ -58,11 +57,32 @@ function Index(props) {
                 <div className="infoIcon">
                   <TimeIcon />
                 </div>
+                <div className="infoTextSplit">
+                  <div className="infoTextLeft">
+                    <span className="phone">
+                      <b>3pm</b> – <b>9pm</b>
+                    </span>
+                    <span className="secondary">Wednesday & Thursday</span>
+                  </div>
+                  <div className="infoTextRight">
+                    <span className="phone">
+                      <b>12pm</b> – <b>9pm</b>
+                    </span>
+                    <span className="secondary">Friday – Sunday</span>
+                  </div>
+                </div>
+              </div>
+              <div className="info">
+                <div className="infoIcon">
+                  <DeliveryIcon />
+                </div>
                 <div className="infoText">
                   <span className="phone">
-                    Open <b>12pm</b> – <b>9pm</b>
+                    Delivery from <b>York Rd</b> to <b>Howard Rd</b>
                   </span>
-                  <span className="secondary">Wednesday ⁠–⁠ Sunday</span>
+                  <span className="secondary">
+                    Available until time slots fill up
+                  </span>
                 </div>
               </div>
               <a className="info" href="tel:7784280014">
@@ -71,10 +91,13 @@ function Index(props) {
                 </div>
                 <div className="infoText">
                   <span className="secondary">
-                    Call for takeaway or delivery
+                    Call for takeaway or delivery.
                   </span>
                   <span className="phone">
                     <b>778 428 0014</b>
+                  </span>
+                  <span className="tertiary">
+                    Card payments accepted over the phone or cash on delivery.
                   </span>
                 </div>
               </a>
@@ -86,9 +109,9 @@ function Index(props) {
                 </div>
                 <div className="gridItem">
                   <Image
-                    src="/images/finish2.jpg"
-                    width="800"
-                    height="533"
+                    src="/images/pizzatomato.jpg"
+                    width="960"
+                    height="917"
                     alt=""
                   />
                 </div>
@@ -116,27 +139,6 @@ function Index(props) {
                     </div>
                   )
                 })}
-            </div>
-            <div className="menuImageGrid">
-              <div className="gridItem">
-                <img src="/images/pizza.jpg" alt="" />
-              </div>
-              <div className="gridItem">
-                <Image
-                  src="/images/finish1.jpg"
-                  width="1000"
-                  height="638"
-                  alt=""
-                />
-              </div>
-              <div className="gridItem">
-                <Image
-                  src="/images/bagels.jpg"
-                  width="720"
-                  height="720"
-                  alt=""
-                />
-              </div>
             </div>
             <h2 className="menu-title">Veggie Pizzas</h2>
             <p className="subtitle">14″ crispy sourdough crust</p>
@@ -166,6 +168,7 @@ function Index(props) {
                 })}
             </div>
             <h2 className="menu-title">Bagel Sandwiches</h2>
+            <p className="subtitle">Toasted, house-made bagel melts</p>
             <div className="menuGrid">
               {data.sandwiches &&
                 data.sandwiches.map(item => {
@@ -192,6 +195,7 @@ function Index(props) {
                 })}
             </div>
             <h2 className="menu-title">Salads</h2>
+            <p className="addition">Add chicken to salad for $2.50</p>
             <div className="menuGrid">
               {data.salad &&
                 data.salad.map(item => {
@@ -446,7 +450,7 @@ function Index(props) {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            opacity: 0.3;
+            opacity: 0.25;
           }
         }
 
@@ -482,6 +486,13 @@ function Index(props) {
         .subtitle {
           margin-top: -0.5rem;
           padding-bottom: 1rem;
+        }
+
+        .addition {
+          margin-top: -0.75rem;
+          padding-bottom: 0.75rem;
+          font-style: italic;
+          opacity: 0.5;
         }
 
         .heroImageGrid {
@@ -575,6 +586,32 @@ function Index(props) {
           }
         }
 
+        .infoTextSplit {
+          display: flex;
+        }
+
+        .infoTextLeft {
+          padding-right: 1rem;
+          margin-right: 1rem;
+          position: relative;
+
+          &:after {
+            content: '';
+            position: absolute;
+            border-radius: 1px;
+            top: 50%;
+            right: 0;
+            width: 2px;
+            height: 66%;
+            transform: translate3d(50%, -50%, 0);
+            background: white;
+            opacity: 0.3;
+          }
+        }
+
+        .infoTextRight {
+        }
+
         .phone {
           font-size: 1.125rem;
         }
@@ -582,6 +619,14 @@ function Index(props) {
         .secondary {
           opacity: 0.7;
           display: block;
+        }
+
+        .tertiary {
+          opacity: 0.7;
+          display: block;
+          font-style: italic;
+          font-size: 0.8rem;
+          margin-top: 0rem;
         }
 
         .infoText {
@@ -661,7 +706,7 @@ function Index(props) {
 
         .saladDescription {
           margin: 0 0 0.25rem 0;
-          line-height: 1.2;
+          line-height: 1.3;
           align-self: flex-start;
           color: var(--color-dark);
         }
