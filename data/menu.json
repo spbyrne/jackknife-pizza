@@ -26,11 +26,6 @@
       "price": "25"
     },
     {
-      "name": "Presto Pesto",
-      "description": "House made basil pesto, fresh mozzarella, prosciutto, fresh arugula, balsamic reduction",
-      "price": "26"
-    },
-    {
       "name": "Chili Lime Chicken",
       "description": "Garlic oil, mozzarella, aged cheddar, chili lime marinated chicken, corn, black beans, red onion, cilantro, parmesan",
       "price": "27"
@@ -38,11 +33,6 @@
     {
       "name": "Jackknife BBQ Chicken",
       "description": "Jackknife BBQ sauce, mozzarella, aged cheddar, chicken, pineapple, candied jalapenos, parmesan",
-      "price": "27"
-    },
-    {
-      "name": "Sausage",
-      "description": "Tomato sauce, mozzarella, aged cheddar, pickled jalapenos, garlic pork sausage, fennel seeds, parmesan",
       "price": "27"
     },
     {
@@ -78,16 +68,6 @@
       "price": "22"
     },
     {
-      "name": "Margherita",
-      "description": "Tomato sauce, fresh mozzarella, basil, parmesan",
-      "price": "22"
-    },
-    {
-      "name": "S.S. Mush Rush",
-      "description": "Garlic oil, mozzarella, aged cheddar, thyme, pickled onions, mushrooms, lemon and truffle crème drizzle",
-      "price": "25"
-    },
-    {
       "name": "Pepper Parade",
       "description": "Garlic oil, mozzarella, aged cheddar, bell peppers, kalamata olives, fresh jalapenos, pickled onion, parmesan",
       "price": "25"
@@ -100,7 +80,7 @@
   ],
   "other": [
     {
-      "name": "Baked Brie Tear and Share (14”)",
+      "name": "Baked Brie Tear and Share (12”)",
       "description": "Garlic oil, Natural Pastures brie, herbs, parmesan",
       "price": "22"
     },
@@ -111,7 +91,7 @@
     },
     {
       "name": "Cookies and Cream Dessert Pizza (10”)",
-      "description": "Condensed milk, crumbled oreos, strawberries",
+      "description": "Condensed milk, crumbled oreos, cherry coulis",
       "price": "15"
     }
   ],
@@ -133,7 +113,7 @@
       "price": "2"
     },
     {
-      "name": "Gluten Friendly Crust",
+      "name": "12\" Gluten Friendly Crust",
       "price": "2"
     },
     {
@@ -143,7 +123,7 @@
   ],
   "combos": [
     {
-      "name": "Single Sandwich combo",
+      "name": "Single Sandwich Combo",
       "description": "1 bagel sandwich, 1 half salad, 1 drink",
       "price": "16"
     },
@@ -153,12 +133,12 @@
       "price": "22"
     },
     {
-      "name": "Single Pizza combo",
+      "name": "Single Pizza Combo",
       "description": "1 pizza, 1 full salad, 2 drinks",
       "price": "40"
     },
     {
-      "name": "Two Pizza combo",
+      "name": "Two Pizza Combo",
       "description": "2 pizzas, 1 full salad, 3 drinks",
       "price": "65"
     },
@@ -195,7 +175,7 @@
   "salad": [
     {
       "name": "House Green Salad",
-      "description": "Salad greens, carrot & beet spirals, tomato, red onion, sprouts And your choice sesame ginger dressing cherry balsamic dressing Jackknife dill caesar dressing",
+      "description": "Salad greens, grated carrots & beets, tomato, red onion, sprouts And your choice sesame ginger dressing cherry balsamic dressing Jackknife dill caesar dressing",
       "halfPrice": "6.5",
       "fullPrice": "13"
     },
@@ -207,13 +187,13 @@
     },
     {
       "name": "Berry Salad",
-      "description": "Salad greens, carrot & beet spirals, tomato, red onion, sprouts, berries, goat cheese, cherry balsamic dressing",
+      "description": "Salad greens, grated carrots & beets, tomato, red onion, sprouts, berries, goat cheese, cherry balsamic dressing",
       "halfPrice": "7.5",
       "fullPrice": "15"
     },
     {
       "name": "Asian Salad",
-      "description": "Salad greens, carrot & beet spirals, tomato, red onion, sprouts, almonds, mandarin orange, sesame ginger dressing",
+      "description": "Salad greens, grated carrots & beets, tomato, red onion, sprouts, almonds, mandarin orange, sesame ginger dressing",
       "halfPrice": "7.5",
       "fullPrice": "15"
     }
@@ -224,8 +204,8 @@
       "price": "2.5"
     },
     {
-      "name": "12 Pack fresh",
-      "price": "24"
+      "name": "6 Pack fresh",
+      "price": "12"
     },
     {
       "name": "12 Pack frozen",
@@ -264,8 +244,13 @@
       "price": "9"
     },
     {
+      "name": "Jalapeno Popper",
+      "description": "Garlic oil, mozzarella, aged cheddar, fresh jalapenos, cream cheese pillows, bacon bits, parmesan",
+      "price": "9"
+    },
+    {
       "name": "Salmon Lox",
-      "description": "Garlic oil, maple syrup infused cream cheese, salmon lox, pickled onions, lemon and caper oil drizzle",
+      "description": "Dill and caper infused crème cheese, pickled red onion, salmon lox, maple syrup drizzle, and alfalfa sprouts",
       "price": "12"
     }
   ]

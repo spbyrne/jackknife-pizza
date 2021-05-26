@@ -2,6 +2,7 @@ import Logo from '../public/images/jackknife-logo.svg'
 import MapIcon from '../public/images/map-pin.svg'
 import PhoneIcon from '../public/images/phone.svg'
 import TimeIcon from '../public/images/time.svg'
+import DeliveryIcon from '../public/images/delivery.svg'
 import Image from 'next/image'
 import Head from 'next/head'
 import Link from 'next/link'
@@ -74,11 +75,32 @@ function Index(props) {
                   <div className="infoIcon">
                     <TimeIcon />
                   </div>
+                  <div className="infoTextSplit">
+                    <div className="infoTextLeft">
+                      <span className="phone">
+                        <b>3pm</b> – <b>9pm</b>
+                      </span>
+                      <span className="secondary">Wednesday & Thursday</span>
+                    </div>
+                    <div className="infoTextRight">
+                      <span className="phone">
+                        <b>12pm</b> – <b>9pm</b>
+                      </span>
+                      <span className="secondary">Friday – Sunday</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="info">
+                  <div className="infoIcon">
+                    <DeliveryIcon />
+                  </div>
                   <div className="infoText">
                     <span className="phone">
-                      Open <b>12pm</b> – <b>9pm</b>
+                      Delivery from <b>York Rd</b> to <b>Howard Rd</b>
                     </span>
-                    <span className="secondary">Wednesday ⁠–⁠ Sunday</span>
+                    <span className="secondary">
+                      Available until time slots fill up
+                    </span>
                   </div>
                 </div>
                 <a className="info" href="tel:7784280014">
@@ -87,10 +109,13 @@ function Index(props) {
                   </div>
                   <div className="infoText">
                     <span className="secondary">
-                      Call for takeaway or delivery
+                      Call for takeaway or delivery.
                     </span>
                     <span className="phone">
                       <b>778 428 0014</b>
+                    </span>
+                    <span className="tertiary">
+                      Card payments accepted over the phone or cash on delivery.
                     </span>
                   </div>
                 </a>
@@ -344,11 +369,20 @@ function Index(props) {
 
         .phone {
           font-size: 1.125rem;
+          letter-spacing: 0.1px;
         }
 
         .secondary {
           opacity: 0.7;
           display: block;
+        }
+
+        .tertiary {
+          opacity: 0.7;
+          display: block;
+          font-style: italic;
+          font-size: 0.8rem;
+          margin-top: 0rem;
         }
 
         .infoText {
@@ -357,6 +391,32 @@ function Index(props) {
           :global(b) {
             white-space: nowrap;
           }
+        }
+
+        .infoTextSplit {
+          display: flex;
+        }
+
+        .infoTextLeft {
+          padding-right: 1rem;
+          margin-right: 1rem;
+          position: relative;
+
+          &:after {
+            content: '';
+            position: absolute;
+            border-radius: 1px;
+            top: 50%;
+            right: 0;
+            width: 2px;
+            height: 66%;
+            transform: translate3d(50%, -50%, 0);
+            background: white;
+            opacity: 0.3;
+          }
+        }
+
+        .infoTextRight {
         }
 
         span {
