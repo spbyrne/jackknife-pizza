@@ -41,11 +41,6 @@
       "price": "27"
     },
     {
-      "name": "Sausage",
-      "description": "Tomato sauce, mozzarella, aged cheddar, pickled jalapenos, garlic pork sausage, fennel seeds, parmesan",
-      "price": "27"
-    },
-    {
       "name": "Jalapeno Popper",
       "description": "Garlic oil, mozzarella, aged cheddar, fresh jalapenos, cream cheese pillows, bacon bits, parmesan",
       "price": "27"
@@ -78,24 +73,9 @@
       "price": "22"
     },
     {
-      "name": "Margherita",
-      "description": "Tomato sauce, fresh mozzarella, basil, parmesan",
-      "price": "22"
-    },
-    {
-      "name": "S.S. Mush Rush",
-      "description": "Garlic oil, mozzarella, aged cheddar, thyme, pickled onions, mushrooms, lemon and truffle crème drizzle",
-      "price": "25"
-    },
-    {
       "name": "Pepper Parade",
       "description": "Garlic oil, mozzarella, aged cheddar, bell peppers, kalamata olives, fresh jalapenos, pickled onion, parmesan",
       "price": "25"
-    },
-    {
-      "name": "Pesto Veggie",
-      "description": "House made basil pesto, mozzarella, aged cheddar, red onion, cherry tomato, peppers, mushrooms, spinach, feta",
-      "price": "26"
     }
   ],
   "other": [
