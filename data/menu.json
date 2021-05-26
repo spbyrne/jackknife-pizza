@@ -143,7 +143,7 @@
   ],
   "combos": [
     {
-      "name": "Single Sandwich combo",
+      "name": "Single Sandwich Combo",
       "description": "1 bagel sandwich, 1 half salad, 1 drink",
       "price": "16"
     },
@@ -153,12 +153,12 @@
       "price": "22"
     },
     {
-      "name": "Single Pizza combo",
+      "name": "Single Pizza Combo",
       "description": "1 pizza, 1 full salad, 2 drinks",
       "price": "40"
     },
     {
-      "name": "Two Pizza combo",
+      "name": "Two Pizza Combo",
       "description": "2 pizzas, 1 full salad, 3 drinks",
       "price": "65"
     },
