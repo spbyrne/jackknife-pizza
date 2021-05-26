@@ -26,11 +26,6 @@
       "price": "25"
     },
     {
-      "name": "Presto Pesto",
-      "description": "House made basil pesto, fresh mozzarella, prosciutto, fresh arugula, balsamic reduction",
-      "price": "26"
-    },
-    {
       "name": "Chili Lime Chicken",
       "description": "Garlic oil, mozzarella, aged cheddar, chili lime marinated chicken, corn, black beans, red onion, cilantro, parmesan",
       "price": "27"
@@ -76,6 +71,11 @@
       "name": "Pepper Parade",
       "description": "Garlic oil, mozzarella, aged cheddar, bell peppers, kalamata olives, fresh jalapenos, pickled onion, parmesan",
       "price": "25"
+    },
+    {
+      "name": "Pesto Veggie",
+      "description": "House made basil pesto, mozzarella, aged cheddar, red onion, cherry tomato, peppers, mushrooms, spinach, feta",
+      "price": "26"
     }
   ],
   "other": [
