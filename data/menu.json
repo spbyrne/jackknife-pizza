@@ -264,6 +264,11 @@
       "price": "9"
     },
     {
+      "name": "Jalapeno Popper",
+      "description": "Garlic oil, mozzarella, aged cheddar, fresh jalapenos, cream cheese pillows, bacon bits, parmesan",
+      "price": "9"
+    },
+    {
       "name": "Salmon Lox",
       "description": "Dill and caper infused crème cheese, pickled red onion, salmon lox, maple syrup drizzle, and alfalfa sprouts",
       "price": "12"
