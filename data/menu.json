@@ -41,11 +41,6 @@
       "price": "27"
     },
     {
-      "name": "S.S. Mush Rush",
-      "description": "Garlic oil, mozzarella, aged cheddar, thyme, pickled onions, mushrooms, lemon and truffle crème drizzle",
-      "price": "25"
-    },
-    {
       "name": "Triple Threat",
       "description": "Tomato sauce, mozzarella, aged cheddar, shaved ham, pepperoni, bacon bits, parmesan",
       "price": "29"
@@ -75,6 +70,11 @@
     {
       "name": "Pepper Parade",
       "description": "Garlic oil, mozzarella, aged cheddar, bell peppers, kalamata olives, fresh jalapenos, pickled onion, parmesan",
+      "price": "25"
+    },
+    {
+      "name": "S.S. Mush Rush",
+      "description": "Garlic oil, mozzarella, aged cheddar, thyme, pickled onions, mushrooms, lemon and truffle crème drizzle",
       "price": "25"
     },
     {
