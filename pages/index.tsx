@@ -132,7 +132,7 @@ function Index(props) {
             </div>
             <div className="card">
               <div className="locationImageWrapper">
-                <img src="images/mount-washington.jpg" alt="" />
+                <img src="images/trailer-new.jpg" alt="" />
               </div>
               <div className="cardContent">
                 <div className="info">
@@ -148,7 +148,7 @@ function Index(props) {
                       <p>
                         Introducing Jackknife Pizza Courtenay! Come on down and
                         try a slice of our new foccacia style pizza, or take a
-                        whole pie for a group of friends.
+                        whole pizza for a group of friends.
                       </p>
                     </span>
                   </div>
