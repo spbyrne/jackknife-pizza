@@ -33,10 +33,8 @@ function Index(props) {
               <p>
                 Our take out store front is located in Black Creek at the
                 Saratoga Speedway through the Macaulay Road entrance. Our second
-                location is our food trailer, serving wood fire pizza. The
-                trailer was located at Mount Washington, in the Sunrise Parking
-                lot, for the duration of the 2020⁠–⁠21 ski season; a new
-                location is coming soon.
+                location is our food trailer, serving foccacia style pizza in
+                Courtenay.
               </p>
             </div>
           </div>
@@ -134,25 +132,63 @@ function Index(props) {
             </div>
             <div className="card">
               <div className="locationImageWrapper">
-                <img src="images/mount-washington.jpg" alt="" />
+                <img src="images/trailer-new.jpg" alt="" />
               </div>
               <div className="cardContent">
                 <div className="info">
                   <div className="infoIcon"></div>
                   <div className="infoText">
-                    <h2 className="locationTitle">Food Truck</h2>
+                    <h2 className="locationTitle">Courtenay Food Trailer</h2>
+                  </div>
+                </div>
+                <div className="info">
+                  <div className="infoIcon"></div>
+                  <div className="infoText">
+                    <span className="secondary">
+                      <p>
+                        Introducing Jackknife Pizza Courtenay! Come on down and
+                        try a slice of our new foccacia style pizza, or take a
+                        whole pizza for a group of friends.
+                      </p>
+                    </span>
                   </div>
                 </div>
                 <a
                   className="info"
-                  href="https://www.google.com/maps/place/Mount+Washington+Skiing+Alpine+Resort/@49.7415308,-125.3012318,15z/data=!4m5!3m4!1s0x0:0x2587a153025666e6!8m2!3d49.7415308!4d-125.3012318"
+                  href="https://www.google.com/maps/place/12+5th+St,+Courtenay,+BC+V9N+3N7/@49.6934127,-124.9951805,17z/data=!3m1!4b1!4m5!3m4!1s0x548813f4aa7829fd:0xeb446b2f673c3d33!8m2!3d49.6934127!4d-124.9929918"
                 >
-                  <div className="infoIcon"></div>
+                  <div className="infoIcon">
+                    <MapIcon />
+                  </div>
                   <div className="infoText">
-                    <span className="phone">Details Coming Soon</span>
-                    <span className="secondary"></span>
+                    <span className="phone">
+                      <b>12 5th Street, Courtenay</b>
+                    </span>
+                    <span className="secondary">Next to the Slough Marina</span>
                   </div>
                 </a>
+                <div className="info">
+                  <div className="infoIcon">
+                    <TimeIcon />
+                  </div>
+                  <div className="infoText">
+                    <span className="phone">
+                      <b>12pm </b>-<b> 7pm</b>
+                    </span>
+                    <span className="secondary">Thursday - Sunday</span>
+                  </div>
+                </div>
+                <div className="filler"></div>
+                <div className="info">
+                  <div className="infoIcon"></div>
+                  <div className="infoText">
+                    <Link href="/food-trailer">
+                      <a className="button">
+                        View Menu <Arrow />
+                      </a>
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -198,6 +234,7 @@ function Index(props) {
 
           @media (min-width: 800px) {
             grid-template-columns: 1fr 3fr;
+            align-items: center;
           }
         }
 
@@ -375,6 +412,11 @@ function Index(props) {
         .secondary {
           opacity: 0.7;
           display: block;
+        }
+
+        .secondary p {
+          font-size: 1.125em;
+          margin-bottom: 0.675rem;
         }
 
         .tertiary {
