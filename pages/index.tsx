@@ -73,18 +73,30 @@ function Index(props) {
                   <div className="infoIcon">
                     <TimeIcon />
                   </div>
-                  <div className="infoTextSplit">
-                    <div className="infoTextLeft">
+                  <div className="infoText">
+                    <div className="heatWave">
+                      <b>HEAT WAVE HOURS</b> <br />
+                      <p className="smallText">
+                        These hours will be in effect until further notice.
+                      </p>
                       <span className="phone">
-                        <b>3pm</b> – <b>9pm</b>
+                        <b>4pm</b> – <b>9pm</b>
                       </span>
-                      <span className="secondary">Wednesday & Thursday</span>
+                      <span className="secondary">Wednesday – Sunday</span>
                     </div>
-                    <div className="infoTextRight">
-                      <span className="phone">
-                        <b>12pm</b> – <b>9pm</b>
-                      </span>
-                      <span className="secondary">Friday – Sunday</span>
+                    <div className="infoTextSplit disabled">
+                      <div className="infoTextLeft">
+                        <span className="phone">
+                          <b>3pm</b> – <b>9pm</b>
+                        </span>
+                        <span className="secondary">Wednesday & Thursday</span>
+                      </div>
+                      <div className="infoTextRight">
+                        <span className="phone">
+                          <b>12pm</b> – <b>9pm</b>
+                        </span>
+                        <span className="secondary">Friday – Sunday</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -299,6 +311,27 @@ function Index(props) {
           @media (min-width: 1000px) {
             grid-template-columns: 1fr 1fr;
           }
+        }
+
+        .heatWave {
+          padding: 1rem;
+          background: var(--color-red);
+          margin-bottom: 0.5rem;
+          color: white;
+          border-radius: 0.5rem;
+          box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.1),
+            0 1rem 4rem -0.5rem var(--color-dark);
+        }
+
+        .smallText {
+          font-size: 0.9rem !important;
+          margin: 0 !important;
+          opacity: 0.7;
+          margin-bottom: 0.5rem !important;
+        }
+
+        .disabled {
+          opacity: 0.4;
         }
 
         .card {
