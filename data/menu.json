@@ -145,19 +145,5 @@
       "name": "",
       "price": ""
     }
-  ],
-  "bagels": [
-    {
-      "name": "Fresh Single",
-      "price": "2.5"
-    },
-    {
-      "name": "6 Pack fresh",
-      "price": "12"
-    },
-    {
-      "name": "12 Pack frozen",
-      "price": "19"
-    }
   ]
 }

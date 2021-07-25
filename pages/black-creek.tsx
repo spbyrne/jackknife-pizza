@@ -201,25 +201,6 @@ function Index(props) {
                       )
                     })}
                 </div>
-                <h3 className="menu-title--small">Island Style Bagels</h3>
-                <p className="subtitle">
-                  Fresh bagels available on Wednesday and Thursday. Frozen
-                  bagels available in store any time during open hours.
-                </p>
-                <div className="menuList">
-                  {data.bagels &&
-                    data.bagels.map(item => {
-                      return (
-                        <div className="menuItemSmall">
-                          <h4 className="itemName itemNameSmall">
-                            {item.name}
-                          </h4>
-                          <span className="dots"></span>
-                          <p className="itemPrice">{item.price}</p>
-                        </div>
-                      )
-                    })}
-                </div>
               </div>
             </div>
             <div className="menu-footer">
