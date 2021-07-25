@@ -79,7 +79,7 @@
     },
     {
       "name": "Pesto Veggie",
-      "description": "House made basil pesto, mozzarella, aged cheddar, red onion, cherry tomato, peppers, mushrooms, spinach, feta",
+      "description": "House made basil pesto, mozzarella, aged cheddar, red onion, cherry tomato, peppers, mushrooms, spinach, feta, balsamic reduction",
       "price": "26"
     }
   ],
@@ -126,33 +126,6 @@
       "price": "0"
     }
   ],
-  "combos": [
-    {
-      "name": "Single Sandwich Combo",
-      "description": "1 bagel sandwich, 1 half salad, 1 drink",
-      "price": "16"
-    },
-    {
-      "name": "Two Sandwich Combo",
-      "description": "2 bagel sandwichs, 1 full salad, 2 drinks",
-      "price": "22"
-    },
-    {
-      "name": "Single Pizza Combo",
-      "description": "1 pizza, 1 full salad, 2 drinks",
-      "price": "40"
-    },
-    {
-      "name": "Two Pizza Combo",
-      "description": "2 pizzas, 1 full salad, 3 drinks",
-      "price": "65"
-    },
-    {
-      "name": "Family Pizza Combo",
-      "description": "3 pizzas, 2 full salads, 5 drinks",
-      "price": "100"
-    }
-  ],
   "dips": [
     {
       "name": "Jackknife Dill",
@@ -165,42 +138,12 @@
     {
       "name": "Aioli (garlic dip)",
       "price": "1"
-    },
-    {
-      "name": "Marinara",
-      "price": "1"
     }
   ],
   "soup": [
     {
       "name": "",
       "price": ""
-    }
-  ],
-  "salad": [
-    {
-      "name": "House Green Salad",
-      "description": "Salad greens, grated carrots & beets, tomato, red onion, sprouts And your choice sesame ginger dressing cherry balsamic dressing Jackknife dill caesar dressing",
-      "halfPrice": "6.5",
-      "fullPrice": "13"
-    },
-    {
-      "name": "Jackknife Dill Caesar",
-      "description": "Romaine, parm, bacon bits, sourdough croutons, jackknife dill caesar dressing",
-      "halfPrice": "7.5",
-      "fullPrice": "15"
-    },
-    {
-      "name": "Berry Salad",
-      "description": "Salad greens, grated carrots & beets, tomato, red onion, sprouts, berries, goat cheese, cherry balsamic dressing",
-      "halfPrice": "7.5",
-      "fullPrice": "15"
-    },
-    {
-      "name": "Asian Salad",
-      "description": "Salad greens, grated carrots & beets, tomato, red onion, sprouts, almonds, mandarin orange, sesame ginger dressing",
-      "halfPrice": "7.5",
-      "fullPrice": "15"
     }
   ],
   "bagels": [
@@ -215,48 +158,6 @@
     {
       "name": "12 Pack frozen",
       "price": "19"
-    }
-  ],
-  "sandwiches": [
-    {
-      "name": "Honey Garlic",
-      "description": "Local honey, aged cheddar, mozzarella, garlic",
-      "price": "7"
-    },
-    {
-      "name": "Ham and Cheese",
-      "description": "Ham, aged cheddar, mozzarella, grainy mustard",
-      "price": "9"
-    },
-    {
-      "name": "Mushroom Melt",
-      "description": "Mushroom, aged cheddar, mozzarella, thyme, pickled red onions, lemon and truffle crème drizzle ",
-      "price": "9"
-    },
-    {
-      "name": "Pepperoni",
-      "description": "Tomato sauce, aged cheddar, mozzarella, pepperoni",
-      "price": "9"
-    },
-    {
-      "name": "Pickle Dijon",
-      "description": "Sweet Dijon and garlic oil, aged cheddar, mozzarella, pickles, parmesan",
-      "price": "9"
-    },
-    {
-      "name": "Gateway to Olives",
-      "description": "Tomato sauce, aged cheddar, mozzarella, kalamata olives, pickled jalapenos, pickled onion",
-      "price": "9"
-    },
-    {
-      "name": "Jalapeno Popper",
-      "description": "Garlic oil, mozzarella, aged cheddar, fresh jalapenos, cream cheese pillows, bacon bits, parmesan",
-      "price": "9"
-    },
-    {
-      "name": "Salmon Lox",
-      "description": "Dill and caper infused crème cheese, pickled red onion, salmon lox, maple syrup drizzle, and alfalfa sprouts",
-      "price": "12"
     }
   ]
 }

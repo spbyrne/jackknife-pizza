@@ -167,56 +167,6 @@ function Index(props) {
                   )
                 })}
             </div>
-            <h2 className="menu-title">Bagel Sandwiches</h2>
-            <p className="subtitle">Toasted, house-made bagel melts</p>
-            <div className="menuGrid">
-              {data.sandwiches &&
-                data.sandwiches.map(item => {
-                  return (
-                    <div className="menuItem">
-                      <h3 className="itemName">{item.name}</h3>
-                      <p className="itemDescription">{item.description}</p>
-                      <p className="itemPrice">{item.price}</p>
-                    </div>
-                  )
-                })}
-            </div>
-            <h2 className="menu-title">Combo Meals</h2>
-            <div className="menuGrid">
-              {data.combos &&
-                data.combos.map(item => {
-                  return (
-                    <div className="menuItem">
-                      <h3 className="itemName">{item.name}</h3>
-                      <p className="itemDescription">{item.description}</p>
-                      <p className="itemPrice">{item.price}</p>
-                    </div>
-                  )
-                })}
-            </div>
-            <h2 className="menu-title">Salads</h2>
-            <p className="addition">Add chicken to salad for $2.50</p>
-            <div className="menuGrid">
-              {data.salad &&
-                data.salad.map(item => {
-                  return (
-                    <div className="salad">
-                      <h3 className="saladName">{item.name}</h3>
-                      <p className="saladDescription">{item.description}</p>
-                      <div className="saladPrice">
-                        <h4 className="priceName">Half</h4>
-                        <span className="saladDots"></span>
-                        <p className="priceNumber">{item.halfPrice}</p>
-                      </div>
-                      <div className="saladPrice">
-                        <h4 className="priceName">Full</h4>
-                        <span className="saladDots"></span>
-                        <p className="priceNumber">{item.fullPrice}</p>
-                      </div>
-                    </div>
-                  )
-                })}
-            </div>
             <div className="columns">
               <div className="column contentMargin">
                 <h3 className="menu-title--small">Alterations</h3>
