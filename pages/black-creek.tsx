@@ -17,7 +17,7 @@ function Index(props) {
         <meta
           name="og:description"
           property="og:description"
-          content="We provide a wide range of delicious and interesting topping combinations with a crispy sourdough crust. We also offer fresh bagels through the Black Creek location."
+          content="We provide a wide range of delicious and interesting topping combinations with a crispy sourdough crust."
         />
       </Head>
       <div className="hero">
@@ -33,8 +33,6 @@ function Index(props) {
               <p>
                 Jackknife Pizza provides a wide range of delicious and
                 interesting topping combinations with a crispy sourdough crust.
-                We also offer fresh bagels daily through our Black Creek
-                location.
               </p>
 
               <a
