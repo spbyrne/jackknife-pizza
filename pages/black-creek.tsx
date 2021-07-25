@@ -17,7 +17,7 @@ function Index(props) {
         <meta
           name="og:description"
           property="og:description"
-          content="We provide a wide range of delicious and interesting topping combinations with a crispy sourdough crust. We also offer fresh bagels through the Black Creek location."
+          content="We provide a wide range of delicious and interesting topping combinations with a crispy sourdough crust."
         />
       </Head>
       <div className="hero">
@@ -33,8 +33,6 @@ function Index(props) {
               <p>
                 Jackknife Pizza provides a wide range of delicious and
                 interesting topping combinations with a crispy sourdough crust.
-                We also offer fresh bagels daily through our Black Creek
-                location.
               </p>
 
               <a
@@ -167,56 +165,6 @@ function Index(props) {
                   )
                 })}
             </div>
-            <h2 className="menu-title">Bagel Sandwiches</h2>
-            <p className="subtitle">Toasted, house-made bagel melts</p>
-            <div className="menuGrid">
-              {data.sandwiches &&
-                data.sandwiches.map(item => {
-                  return (
-                    <div className="menuItem">
-                      <h3 className="itemName">{item.name}</h3>
-                      <p className="itemDescription">{item.description}</p>
-                      <p className="itemPrice">{item.price}</p>
-                    </div>
-                  )
-                })}
-            </div>
-            <h2 className="menu-title">Combo Meals</h2>
-            <div className="menuGrid">
-              {data.combos &&
-                data.combos.map(item => {
-                  return (
-                    <div className="menuItem">
-                      <h3 className="itemName">{item.name}</h3>
-                      <p className="itemDescription">{item.description}</p>
-                      <p className="itemPrice">{item.price}</p>
-                    </div>
-                  )
-                })}
-            </div>
-            <h2 className="menu-title">Salads</h2>
-            <p className="addition">Add chicken to salad for $2.50</p>
-            <div className="menuGrid">
-              {data.salad &&
-                data.salad.map(item => {
-                  return (
-                    <div className="salad">
-                      <h3 className="saladName">{item.name}</h3>
-                      <p className="saladDescription">{item.description}</p>
-                      <div className="saladPrice">
-                        <h4 className="priceName">Half</h4>
-                        <span className="saladDots"></span>
-                        <p className="priceNumber">{item.halfPrice}</p>
-                      </div>
-                      <div className="saladPrice">
-                        <h4 className="priceName">Full</h4>
-                        <span className="saladDots"></span>
-                        <p className="priceNumber">{item.fullPrice}</p>
-                      </div>
-                    </div>
-                  )
-                })}
-            </div>
             <div className="columns">
               <div className="column contentMargin">
                 <h3 className="menu-title--small">Alterations</h3>
@@ -240,25 +188,6 @@ function Index(props) {
                 <div className="menuList">
                   {data.dips &&
                     data.dips.map(item => {
-                      return (
-                        <div className="menuItemSmall">
-                          <h4 className="itemName itemNameSmall">
-                            {item.name}
-                          </h4>
-                          <span className="dots"></span>
-                          <p className="itemPrice">{item.price}</p>
-                        </div>
-                      )
-                    })}
-                </div>
-                <h3 className="menu-title--small">Island Style Bagels</h3>
-                <p className="subtitle">
-                  Fresh bagels available on Wednesday and Thursday. Frozen
-                  bagels available in store any time during open hours.
-                </p>
-                <div className="menuList">
-                  {data.bagels &&
-                    data.bagels.map(item => {
                       return (
                         <div className="menuItemSmall">
                           <h4 className="itemName itemNameSmall">
