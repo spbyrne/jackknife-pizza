@@ -163,24 +163,7 @@ function Index(props) {
                       <div className="menuItemSmall">
                         <h3 className="itemName">{item.name}</h3>
                         {item.description && (
-                          <p className="itemDescription">
-                            {item.description}{' '}
-                            {item.prices && (
-                              <div className="priceList">
-                                {item.prices.map(item => {
-                                  return (
-                                    <div className="menuItemSmall">
-                                      <p className="itemName itemNameSmall">
-                                        {item.description}
-                                      </p>
-                                      <span className="dots"></span>
-                                      <p className="itemPrice">{item.price}</p>
-                                    </div>
-                                  )
-                                })}
-                              </div>
-                            )}
-                          </p>
+                          <p className="itemDescription">{item.description}</p>
                         )}
 
                         <span className="dots"></span>
