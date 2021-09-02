@@ -2,7 +2,6 @@ import Logo from '../public/images/jackknife-logo.svg'
 import MapIcon from '../public/images/map-pin.svg'
 import PhoneIcon from '../public/images/phone.svg'
 import TimeIcon from '../public/images/time.svg'
-import DeliveryIcon from '../public/images/delivery.svg'
 import Image from 'next/image'
 import Link from 'next/link'
 import Head from 'next/head'
@@ -31,9 +30,18 @@ function Index(props) {
               </Link>
               <h2 className="locationName">Courtenay Food Trailer</h2>
               <p>
-                Welcome to Jackknife Pizza Courtenay. Come on down and try a
-                slice of our new foccacia style pizza, or take a whole pizza for
-                a group of friends.
+                Our pizza draws inspiration from Sicilian style pan pizza and
+                Italian focaccia to create our own unique take on thick crust
+                pan pizza.
+              </p>
+              <p>
+                We use caramelized cheddar to create a crispy bottom that
+                contrasts with the light bubbly center of the dough.
+              </p>
+              <p>
+                Our toppings are original combinations of flavours thought up by
+                members of our team. The unique aspects of our pizza are a
+                reflection of the people that work here.
               </p>
 
               <a
@@ -59,8 +67,25 @@ function Index(props) {
                     <b>12pm </b>-<b> 7pm</b>
                   </span>
                   <span className="secondary">Thursday - Sunday</span>
+                  <span className="secondary">
+                    <em>
+                      (hours may vary when live music plays or product is sold
+                      out)
+                    </em>
+                  </span>
                 </div>
               </div>
+              <a className="info" href="tel:2504659933">
+                <div className="infoIcon">
+                  <PhoneIcon />
+                </div>
+                <div className="infoText">
+                  <span className="secondary">Call To Order</span>
+                  <span className="phone">
+                    <b>250 465 9933</b>
+                  </span>
+                </div>
+              </a>
             </div>
             <div className="column">
               <div className="heroImageGrid">
@@ -82,9 +107,6 @@ function Index(props) {
         <div className="container">
           <div className="paper contentMargin">
             <h2 className="menu-title">Thick Crust Pizza</h2>
-            <p className="subtitle">
-              <b>$5</b> Slice &nbsp;–&nbsp; <b>$30</b> Pizza
-            </p>
             <div className="menuGrid">
               {data.pizza &&
                 data.pizza.map(item => {
@@ -92,11 +114,15 @@ function Index(props) {
                     <div className="menuItem">
                       <h3 className="itemName">{item.name}</h3>
                       <p className="itemDescription">{item.description}</p>
+                      <p className="itemPrice">
+                        <b>Sm</b> {item.price.small} – <b>Lg</b>{' '}
+                        {item.price.large}
+                      </p>
                     </div>
                   )
                 })}
             </div>
-            <h2 className="menu-title">Other Options</h2>
+            <h2 className="menu-title">Other Food</h2>
             <div className="menuGrid">
               {data.other &&
                 data.other.map(item => {
@@ -104,12 +130,102 @@ function Index(props) {
                     <div className="menuItem">
                       <h3 className="itemName">{item.name}</h3>
                       {item.description && (
-                        <p className="itemDescription">{item.description}</p>
+                        <p className="itemDescription">
+                          {item.description}{' '}
+                          {item.prices && (
+                            <div className="priceList">
+                              {item.prices.map(item => {
+                                return (
+                                  <div className="menuItemSmall">
+                                    <p className="itemName itemNameSmall">
+                                      {item.description}
+                                    </p>
+                                    <span className="dots"></span>
+                                    <p className="itemPrice">{item.price}</p>
+                                  </div>
+                                )
+                              })}
+                            </div>
+                          )}
+                        </p>
                       )}
                       {item.price && <p className="itemPrice">{item.price}</p>}
                     </div>
                   )
                 })}
+            </div>
+            <div className="columns">
+              <div className="column contentMargin">
+                <h2 className="menu-title">Options</h2>
+                {data.options &&
+                  data.options.map(item => {
+                    return (
+                      <div className="menuItemSmall">
+                        <h3 className="itemName">{item.name}</h3>
+                        {item.description && (
+                          <p className="itemDescription">
+                            {item.description}{' '}
+                            {item.prices && (
+                              <div className="priceList">
+                                {item.prices.map(item => {
+                                  return (
+                                    <div className="menuItemSmall">
+                                      <p className="itemName itemNameSmall">
+                                        {item.description}
+                                      </p>
+                                      <span className="dots"></span>
+                                      <p className="itemPrice">{item.price}</p>
+                                    </div>
+                                  )
+                                })}
+                              </div>
+                            )}
+                          </p>
+                        )}
+
+                        <span className="dots"></span>
+                        {item.price && (
+                          <p className="itemPrice">{item.price}</p>
+                        )}
+                      </div>
+                    )
+                  })}
+              </div>
+              <div className="column contentMargin">
+                <h3 className="menu-title--small">Dips</h3>
+                <div className="menuList">
+                  {data.dips &&
+                    data.dips.map(item => {
+                      return (
+                        <div className="menuItemSmall">
+                          <h4 className="itemName itemNameSmall">
+                            {item.name}
+                          </h4>
+                          <span className="dots"></span>
+                          <p className="itemPrice">{item.price}</p>
+                        </div>
+                      )
+                    })}
+                </div>
+                <h3 className="menu-title--small">Drinks</h3>
+                <div className="menuList">
+                  {data.drinks &&
+                    data.drinks.map(item => {
+                      return (
+                        <div className="menuItemSmall">
+                          <h4 className="itemName itemNameSmall">
+                            {item.name}
+                          </h4>
+                          <span className="dots"></span>
+                          <p className="itemPrice">{item.price}</p>
+                        </div>
+                      )
+                    })}
+                </div>
+              </div>
+            </div>
+            <div className="menu-footer">
+              <p>* All prices include tax</p>
             </div>
           </div>
         </div>
@@ -615,6 +731,10 @@ function Index(props) {
           margin-top: 0.5rem;
           align-self: flex-start;
           color: var(--color-dark);
+        }
+
+        .priceList {
+          margin-top: 1rem;
         }
 
         .itemPrice {

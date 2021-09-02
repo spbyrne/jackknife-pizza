@@ -1,57 +1,120 @@
 {
   "pizza": [
     {
-      "name": "Jalapeno Popper",
-      "description": "Roasted garlic sauce, mozzarella, cheddar, jalapenos, cream cheese pillows, bacon bits, parmesan"
-    },
-    {
-      "name": "Hawaiian",
-      "description": "Roasted garlic sauce, mozzarella, cheddar, ham, bacon bits, fresh pineapple, parmesan"
-    },
-    {
       "name": "Potato Bacon",
-      "description": "Roasted garlic sauce, mozzarella, cheddar, potato, cream cheese pillows, red onion, bacon bits, thyme, parmesan"
-    },
-    {
-      "name": "Sweet Potato",
-      "description": "Roasted garlic sauce, mozzarella, cheddar, sweet potato, red onion, feta, balsamic reduction, parmesan"
+      "description": "Smokey tomato vinaigrette, mozzarella, cheddar, potato, cream cheese pillows, pickled red onion, bacon bits, thyme, parmesan",
+      "price": {
+        "small": "13",
+        "large": "33"
+      }
     },
     {
       "name": "Triple Threat",
-      "description": "Tomato sauce, mozzarella, aged cheddar, shaved ham, pepperoni, bacon bits, red onion, parmesan"
+      "description": "House tomato sauce, mozzarella, cheddar, shaved ham, peperoni, bacon bits, parmesan",
+      "price": {
+        "small": "13",
+        "large": "33"
+      }
     },
     {
-      "name": "The Veg",
-      "description": "Roasted garlic sauce, mozzarella, cheddar, bell peppers, jalapenos, mushrooms, feta, balsamic reduction, parmesan"
+      "name": "Pepperoni",
+      "description": "House tomato sauce, mozzarella, cheddar, peperoni, parmesan",
+      "price": {
+        "small": "12",
+        "large": "30"
+      }
+    },
+    {
+      "name": "J Pepp",
+      "description": "Roasted garlic oil, mozzarella, cheddar, calabrese salami, pickled jalapeno, local honey, parmesan",
+      "price": {
+        "small": "12",
+        "large": "30"
+      }
+    },
+    {
+      "name": "Hawaiian",
+      "description": "Roasted garlic oil, mozzarella, cheddar, fresh pineapple, prosciutto, parmesan",
+      "price": {
+        "small": "12",
+        "large": "30"
+      }
+    },
+    {
+      "name": "Gateway To Olives",
+      "description": "House tomato sauce, mozzarella, cheddar, pickled jalapenos, pickled red onion, kalamata olives, parmesan",
+      "price": {
+        "small": "12",
+        "large": "30"
+      }
+    },
+    {
+      "name": "Pickle Dijon",
+      "description": "Sweet dijon and garlic oil, mozzarella, cheddar, pickles, brie, parmesan",
+      "price": {
+        "small": "12",
+        "large": "30"
+      }
     }
   ],
   "other": [
     {
+      "name": "Cheesy Garlic Bread",
+      "description": "Garlic oil, mozzarella, cheddar, parmesan",
+      "price": "20"
+    },
+    {
+      "name": "Ham and Cheese sandwich",
+      "description": "Mozzarella, cheddar, ham, sweet grainy mustard and dijon garlic oil served on a house made toasted focaccia bread with a browned cheese crispy exterior.",
+      "price": "10"
+    },
+    {
       "name": "Baked Brie Tear & Share",
-      "description": "Garlic, cheddar, thyme, whole baked brie, parmesan",
-      "price": "22"
+      "description": "Roasted garlic oil, cheddar, thyme, and a whole baked brie on top of a toasted focaccia bread cut into dippers.",
+      "price": "25"
+    }
+  ],
+  "options": [
+    {
+      "name": "Gluten Friendly (12”) ",
+      "description": "This is a round crust made in house using gluten free flour, potatoes and cheese.",
+      "price": "25"
     },
     {
-      "name": "Ham & Cheese Sandwich",
-      "description": "Honey mustard, mozzarella, cheddar, whisky glazed ham, and parmesan toasted on a house made bagel",
-      "price": "9"
+      "name": "Dairy Free Cheese",
+      "price": "2"
     },
     {
-      "name": "Pepperoni Pizza Sandwich",
-      "description": "Tomato sauce, mozzarella, cheddar, pepperoni, and parmesan toasted on a house made bagel",
-      "price": "9"
+      "name": "Extra Cheese",
+      "price": "2"
     },
     {
-      "name": "Dip",
+      "name": "Extra Veg",
+      "price": "2"
+    },
+    {
+      "name": "Extra Meat",
+      "price": "2"
+    }
+  ],
+  "dips": [
+    {
+      "name": "Jackknife Dill",
       "price": "1"
     },
     {
-      "name": "Pop or Water",
-      "price": "3"
+      "name": "Aioli (garlic dip)",
+      "price": "1"
+    }
+  ],
+  "drinks": [
+    {
+      "name": "Pop",
+      "price": "1"
     },
     {
-      "name": "Gluten Free Thin Crust",
-      "price": "25"
+      "name": "Water",
+      "price": "1"
     }
   ]
 }

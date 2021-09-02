@@ -176,6 +176,13 @@ function Index(props) {
                       <b>12pm </b>-<b> 7pm</b>
                     </span>
                     <span className="secondary">Thursday - Sunday</span>
+                    <span className="secondary">
+                      <em>
+                        (hours may vary when live music plays
+                        <br />
+                        or product is sold out)
+                      </em>
+                    </span>
                   </div>
                 </div>
                 <div className="filler"></div>
