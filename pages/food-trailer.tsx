@@ -131,8 +131,8 @@ function Index(props) {
                       <h3 className="itemName">{item.name}</h3>
                       {item.description && (
                         <p className="itemDescription">
-                          {item.description}{' '}
-                          {item.prices && (
+                          {item.description}
+                          {/* {item.prices && (
                             <div className="priceList">
                               {item.prices.map(item => {
                                 return (
@@ -146,7 +146,7 @@ function Index(props) {
                                 )
                               })}
                             </div>
-                          )}
+                          )} */}
                         </p>
                       )}
                       {item.price && <p className="itemPrice">{item.price}</p>}
