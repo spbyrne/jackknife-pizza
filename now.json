@@ -1,0 +1,12 @@
+{
+  "redirects": [
+    {
+      "source": "/black-creek",
+      "destination": "/"
+    },
+    {
+      "source": "/food-trailer",
+      "destination": "/"
+    }
+  ]
+}
